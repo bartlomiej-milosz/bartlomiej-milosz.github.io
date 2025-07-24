@@ -4,6 +4,7 @@ excerpt: In recent years, the way we work has undergone a significant transforma
 publishDate: 'Aug 5 2023'
 tags:
   - Guide
+isFeatured: true
 seo:
   image:
     src: '/post-1.jpg'
