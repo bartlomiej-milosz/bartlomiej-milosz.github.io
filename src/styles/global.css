@@ -1,6 +1,23 @@
-@import '@fontsource-variable/inter' layer(base);
-@import '@fontsource-variable/newsreader' layer(base);
-@import '@fontsource-variable/newsreader/wght-italic.css' layer(base);
+/* sans-serif */
+@import "@fontsource/lato/100.css" layer(base);
+@import "@fontsource/lato/100-italic.css" layer(base);
+@import "@fontsource/lato/300.css" layer(base);
+@import "@fontsource/lato/300-italic.css" layer(base);
+@import "@fontsource/lato/400.css" layer(base);
+@import "@fontsource/lato/400-italic.css" layer(base);
+@import "@fontsource/lato/700.css" layer(base);
+@import "@fontsource/lato/700-italic.css" layer(base);
+@import "@fontsource/lato/900.css" layer(base);
+@import "@fontsource/lato/900-italic.css" layer(base);
+
+/* serif */
+@import '@fontsource-variable/lora' layer(base);
+@import '@fontsource-variable/lora/wght-italic.css' layer(base);
+
+/* mono */
+@import '@fontsource-variable/jetbrains-mono' layer(base);
+@import '@fontsource-variable/jetbrains-mono/wght.css' layer(base);
+@import '@fontsource-variable/jetbrains-mono/wght-italic.css' layer(base);
 
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
@@ -37,8 +54,8 @@ html.dark {
 */
 
 /* Green */
-/*
-:root {
+
+/* :root {
     --text-main: #3a4238;
     --bg-main: #f3efe6;
     --bg-muted: #eee9dc;
@@ -49,12 +66,13 @@ html.dark {
     --bg-main: #5e6c5b;
     --bg-muted: #596756;
     --border-main: #f3efe6;
-}
-*/
+} */
+
 
 @theme inline {
-    --font-sans: 'Inter Variable', sans-serif;
-    --font-serif: 'Newsreader Variable', serif;
+    --font-sans: 'Lato', sans-serif;
+    --font-serif: 'Lora Variable', serif;
+    --font-mono: 'JetBrains Mono', monospace;
     --text-color-main: var(--text-main);
     --background-color-main: var(--bg-main);
     --background-color-muted: var(--bg-muted);
