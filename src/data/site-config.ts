@@ -7,6 +7,7 @@ export type Image = {
 export type Link = {
     text: string;
     href: string;
+    target?: string;
 };
 
 export type Hero = {
@@ -41,11 +42,11 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
     website: 'https://bartlomiej-milosz.github.io',
     title: 'Bartłomiej Miłosz',
-    subtitle: 'Data Analyst & Python Developer',
-    description: 'Portfolio and blog of Bartłomiej Miłosz - Data Analyst specializing in Python, machine learning, and business intelligence. Explore my data science projects and analytical insights.',
+    subtitle: 'Architect | Aspiring Data Analyst',
+    description: 'Portfolio of Bartłomiej Miłosz - Architect learning data analysis with Python and Excel. Currently studying Computer Science at PJATK and building analytical skills for career transition.',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Bartłomiej Miłosz - Data Analyst Portfolio'
+        alt: 'Bartłomiej Miłosz - Architect transitioning to Data Analytics'
     },
     headerNavLinks: [
         {
@@ -94,8 +95,8 @@ const siteConfig: SiteConfig = {
         },
     ],
     hero: {
-        title: 'Data-Driven Insights, Business-Focused Solutions',
-        text: "I'm **Bartłomiej Miłosz**, an aspiring data analyst passionate about transforming raw data into actionable business insights. I specialize in Python, SQL, and machine learning to solve real-world problems. Currently seeking my first role in data analysis where I can apply my analytical skills and drive data-informed decision making. Explore my <a href='/projects'>portfolio projects</a> or connect with me on <a href='https://linkedin.com/in/your-profile'>LinkedIn</a>.",
+        title: 'From Design to Data: Building Analytical Solutions',
+        text: "I'm **Bartłomiej Miłosz**, an interior architect transitioning into data analytics. I combine my business consulting background with growing technical skills in Python and Excel to solve problems through data. Currently studying Computer Science at PJATK and actively building my analytical skillset. Check out my <a href='/projects'>learning projects</a> or connect with me on <a href='#'>LinkedIn</a>.",
         image: {
             src: '/hero.jpeg',
             alt: ''
@@ -110,14 +111,14 @@ const siteConfig: SiteConfig = {
                 href: '/projects'
             },
             {
-                text: 'Download Resume',
-                href: '/resume.pdf'
+                text: 'View Resume',
+                href: '/resume',
             }
         ]
     },
     subscribe: {
-        title: 'Stay Updated on Data Insights',
-        text: 'Get notified when I publish new data analysis projects and analytical insights.',
+        title: 'Follow My Data Journey',
+        text: 'Get updates on my learning progress and data analysis projects as I transition into tech.',
         formUrl: '#'
     },
     postsPerPage: 6,
