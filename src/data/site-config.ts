@@ -40,21 +40,17 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     website: 'https://bartlomiej-milosz.github.io',
-    title: 'My Personal Blog',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    title: 'Bartłomiej Miłosz',
+    subtitle: 'Data Analyst & Python Developer',
+    description: 'Portfolio and blog of Bartłomiej Miłosz - Data Analyst specializing in Python, machine learning, and business intelligence. Explore my data science projects and analytical insights.',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        alt: 'Bartłomiej Miłosz - Data Analyst Portfolio'
     },
     headerNavLinks: [
         {
             text: 'Home',
             href: '/'
-        },
-        {
-            text: 'About',
-            href: '/about'
         },
         {
             text: 'Projects',
@@ -65,8 +61,8 @@ const siteConfig: SiteConfig = {
             href: '/blog'
         },
         {
-            text: 'Tags',
-            href: '/tags'
+            text: 'About',
+            href: '/about'
         }
     ],
     footerNavLinks: [
@@ -79,45 +75,53 @@ const siteConfig: SiteConfig = {
             href: '/contact'
         },
         {
+            text: 'Tags',
+            href: '/tags'
+        },
+        {
             text: 'Terms',
             href: '/terms'
         }
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            text: 'Linkedin',
+            href: ''
         },
         {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
+            text: 'Github',
+            href: ''
         },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
-        }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
+        title: 'Data-Driven Insights, Business-Focused Solutions',
+        text: "I'm **Bartłomiej Miłosz**, an aspiring data analyst passionate about transforming raw data into actionable business insights. I specialize in Python, SQL, and machine learning to solve real-world problems. Currently seeking my first role in data analysis where I can apply my analytical skills and drive data-informed decision making. Explore my <a href='/projects'>portfolio projects</a> or connect with me on <a href='https://linkedin.com/in/your-profile'>LinkedIn</a>.",
         image: {
             src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
+            alt: ''
         },
         actions: [
             {
                 text: 'Get in Touch',
                 href: '/contact'
+            },
+            {
+                text: 'View Projects',
+                href: '/projects'
+            },
+            {
+                text: 'Download Resume',
+                href: '/resume.pdf'
             }
         ]
     },
     subscribe: {
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        title: 'Stay Updated on Data Insights',
+        text: 'Get notified when I publish new data analysis projects and analytical insights.',
         formUrl: '#'
     },
-    postsPerPage: 8,
-    projectsPerPage: 8
+    postsPerPage: 6,
+    projectsPerPage: 6
 };
 
 export default siteConfig;

@@ -1,5 +1,6 @@
 ---
 title: About
+titleClass: "text-4xl" # This would be 36px in Tailwind
 seo:
   title: About Me
   description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
