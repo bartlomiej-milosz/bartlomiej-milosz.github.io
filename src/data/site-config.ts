@@ -42,11 +42,11 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
     website: 'https://bartlomiej-milosz.github.io',
     title: 'Bartłomiej Miłosz',
-    subtitle: 'Architect | Aspiring Data Analyst',
-    description: 'Portfolio of Bartłomiej Miłosz - Architect learning data analysis with Python and Excel. Currently studying Computer Science at PJATK and building analytical skills for career transition.',
+    subtitle: 'Architect → Analytics | Better Decisions Through Data',
+    description: 'Portfolio of Bartłomiej Miłosz - Architect transitioning to data analytics. Combining client consulting experience with growing technical skills in Python and Excel. Currently studying Computer Science at PJATK.',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Bartłomiej Miłosz - Architect transitioning to Data Analytics'
+        alt: 'Bartłomiej Miłosz - From Architecture to Analytics Portfolio'
     },
     headerNavLinks: [
         {
@@ -87,28 +87,24 @@ const siteConfig: SiteConfig = {
     socialLinks: [
         {
             text: 'Linkedin',
-            href: ''
+            href: 'https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/'
         },
         {
             text: 'Github',
-            href: ''
+            href: 'https://github.com/bartlomiej-milosz'
         },
     ],
     hero: {
-        title: 'From Design to Data: Building Analytical Solutions',
-        text: "I'm **Bartłomiej Miłosz**, an interior architect transitioning into data analytics. I combine my business consulting background with growing technical skills in Python and Excel to solve problems through data. Currently studying Computer Science at PJATK and actively building my analytical skillset. Check out my <a href='/projects'>learning projects</a> or connect with me on <a href='#'>LinkedIn</a>.",
+        title: 'From Living Solutions to Data Insights',
+        text: "I solve problems through analysis. Previously, I helped individual clients optimize their spaces and budgets. Now I'm building technical skills to help businesses optimize through data - driving customer insights, product improvements, and strategic growth. Currently studying Computer Science at PJATK and developing analytics expertise.",
         image: {
             src: '/hero.jpeg',
-            alt: ''
+            alt: 'Bartłomiej Miłosz - Architect transitioning to Data Analytics'
         },
         actions: [
             {
                 text: 'Get in Touch',
                 href: '/contact'
-            },
-            {
-                text: 'View Projects',
-                href: '/projects'
             },
             {
                 text: 'View Resume',
@@ -117,8 +113,8 @@ const siteConfig: SiteConfig = {
         ]
     },
     subscribe: {
-        title: 'Follow My Data Journey',
-        text: 'Get updates on my learning progress and data analysis projects as I transition into tech.',
+        title: 'Follow My Analytics Journey',
+        text: 'Get updates on my projects and insights as I build expertise in data analytics.',
         formUrl: '#'
     },
     postsPerPage: 6,
