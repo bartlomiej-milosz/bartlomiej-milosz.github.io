@@ -2,8 +2,8 @@
 
 A modern, responsive portfolio website showcasing my journey from interior architecture to data analytics. Built with Astro.js and Tailwind CSS, featuring a clean design with dark/light mode support.
 
-![Portfolio Preview Light](public/bm-preview-light.jpg)
-![Portfolio Preview Dark](public/bm-preview-dark.jpg)
+![Portfolio Preview Light](public/bm-preview-light.png)
+![Portfolio Preview Dark](public/bm-preview-dark.png)
 
 🌐 **Live Demo:** [https://bartlomiej-milosz.github.io](https://bartlomiej-milosz.github.io)
 
