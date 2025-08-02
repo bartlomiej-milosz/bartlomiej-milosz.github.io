@@ -5,12 +5,17 @@ import Button from '../components/Button.astro';
 
 export async function getStaticPaths() {
     const pages = await getCollection('pages');
-    return pages.map((page) => {
-        return {
-            params: { id: page.id },
-            props: { page }
-        };
-    });
+    
+    // Filter out system paths that shouldn't be handled as content
+    const validPages = pages.filter(page => 
+        !page.id.startsWith('.well-known') && 
+        !page.id.includes('favicon')
+    );
+    
+    return validPages.map((page) => ({
+        params: { id: page.id },
+        props: { page }
+    }));
 }
 
 type Props = { page: CollectionEntry<'pages'> };
