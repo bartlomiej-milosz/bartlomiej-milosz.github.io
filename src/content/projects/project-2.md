@@ -9,7 +9,7 @@ seo:
     alt: Customer churn analysis dashboard
 ---
 
-![Customer churn analysis dashboard](/project-1.jpg)
+![Customer churn analysis dashboard](/projects/project-1.jpg)
 
 **Project Overview:**
 This project analyzes customer churn patterns for an e-commerce company using a dataset of 10,000+ customers. The goal was to identify customers at risk of churning and provide actionable insights to improve retention rates.
