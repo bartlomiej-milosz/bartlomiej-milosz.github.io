@@ -45,7 +45,7 @@ const siteConfig: SiteConfig = {
     subtitle: 'Architect → Analytics | Better Decisions Through Data',
     description: 'Portfolio of Bartłomiej Miłosz - Architect transitioning to data analytics. Combining client consulting experience with growing technical skills in Python and Excel. Currently studying Computer Science at PJATK.',
     image: {
-        src: '/dante-preview.jpg',
+        src: '/hero.webp',
         alt: 'Bartłomiej Miłosz - From Architecture to Analytics Portfolio'
     },
     headerNavLinks: [
@@ -98,7 +98,7 @@ const siteConfig: SiteConfig = {
         title: 'From Living Solutions to Data Insights',
         text: "I solve problems through analysis. Previously, I helped individual clients optimize their spaces and budgets. Now I'm building technical skills to help businesses optimize through data - driving customer insights, product improvements, and strategic growth. Currently studying Computer Science at PJATK and developing analytics expertise.",
         image: {
-            src: '/hero.jpeg',
+            src: '/hero.webp',
             alt: 'Bartłomiej Miłosz - Architect transitioning to Data Analytics'
         },
         actions: [
