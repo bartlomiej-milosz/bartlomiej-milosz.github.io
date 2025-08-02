@@ -98,6 +98,10 @@ const siteConfig: SiteConfig = {
 			text: "Github",
 			href: "https://github.com/bartlomiej-milosz",
 		},
+		{
+			text: "Twitter/X",
+			href: "https://x.com/MiOmiej"
+		}
 	],
 	hero: {
 		title: "From Living Solutions to Data Insights",
