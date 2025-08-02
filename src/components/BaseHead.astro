@@ -30,15 +30,23 @@ const resolvedImage = image?.src
 	: undefined;
 const canonicalURL = new URL(Astro.request.url, Astro.site);
 
-// Career-focused default keywords
+// Enhanced career-focused keywords based on new positioning
 const defaultKeywords = [
 	"Bartłomiej Miłosz",
 	"architect to data analytics",
-	"career transition Warsaw",
-	"PJATK computer science",
-	"client consulting experience",
-	"interior architect Poland",
-	"data analyst portfolio",
+	"architectural precision data challenges",
+	"systematic problem-solving data analyst",
+	"stakeholder communication analytics",
+	"career transition Warsaw Poland",
+	"PJATK computer science graduate",
+	"interior architect data analyst",
+	"business consulting to analytics",
+	"client requirements analysis",
+	"project coordination analytics",
+	"architectural analytical thinking",
+	"PropTech data analyst",
+	"construction analytics specialist",
+	"spatial data analysis expert",
 ];
 
 const allKeywords = [...defaultKeywords, ...keywords].join(", ");
@@ -53,49 +61,134 @@ function formatCanonicalURL(url: string | URL) {
 	return path.replace(/\/?$/, hasQueryParams ? "" : "/");
 }
 
-// Structured data for personal branding & career transition
+// Enhanced structured data reflecting new positioning
 const structuredData = {
 	"@context": "https://schema.org",
 	"@type": "Person",
 	name: "Bartłomiej Miłosz",
-	jobTitle: "Interior Architect transitioning to Data Analytics",
+	jobTitle:
+		"Analytical Professional transitioning from Architecture to Data Analytics",
 	description:
 		description ||
-		"Interior architect with 4+ years client consulting experience, transitioning to data analytics. Currently studying Computer Science at PJATK Warsaw.",
+		"Analytical professional combining 4+ years of client consulting and systematic problem-solving experience from architecture with growing technical expertise in data analytics. Currently studying Computer Science at PJATK Warsaw.",
 	url: canonicalURL.toString(),
 	worksFor: {
 		"@type": "Organization",
-		name: "",
+		name: "QKwadrat",
 	},
 	alumniOf: [
 		{
 			"@type": "EducationalOrganization",
 			name: "PJATK Warsaw",
-			description: "Computer Science studies",
+			description:
+				"Computer Science studies - Poland's #3 ranked CS program for graduate earnings",
+			url: "https://pja.edu.pl",
 		},
 		{
 			"@type": "EducationalOrganization",
 			name: "Rzeszów University of Technology",
-			description: "Master of Architecture",
+			description: "Master of Architecture - Spatial Analysis and Design",
 		},
 	],
 	knowsAbout: [
-		"Interior Architecture",
-		"Project Management",
-		"Client Consulting",
+		"Systematic Problem-Solving",
+		"Stakeholder Communication",
+		"Requirements Analysis",
+		"Project Coordination",
 		"Data Analytics",
 		"Python Programming",
-		"Business Analysis",
+		"Business Intelligence",
+		"Interior Architecture",
+		"Client Consulting",
+		"Spatial Data Analysis",
+		"Construction Analytics",
+		"PropTech Solutions",
 	],
+	hasOccupation: [
+		{
+			"@type": "Occupation",
+			name: "Interior Architect",
+			experienceRequirements: "4+ years",
+			skills: "Client consulting, systematic analysis, project management",
+		},
+		{
+			"@type": "Occupation",
+			name: "Data Analyst",
+			occupationLocation: {
+				"@type": "City",
+				name: "Warsaw",
+				addressCountry: "Poland",
+			},
+			skills: "Python, Excel, data visualization, business intelligence",
+		},
+	],
+	seeks: {
+		"@type": "JobPosting",
+		title: "Junior Data Analyst Position",
+		description:
+			"Seeking opportunities to apply systematic problem-solving and stakeholder communication skills to data analytics challenges",
+		jobLocation: {
+			"@type": "Place",
+			address: {
+				"@type": "PostalAddress",
+				addressLocality: "Warsaw",
+				addressCountry: "Poland",
+			},
+		},
+	},
 	sameAs: [
 		"https://linkedin.com/in/bartlomiej-milosz",
 		"https://github.com/bartlomiejMilosz",
+		"https://x.com/MiOmiej",
 	],
 	address: {
 		"@type": "PostalAddress",
 		addressLocality: "Warsaw",
+		addressRegion: "Mazovia",
 		addressCountry: "Poland",
 	},
+};
+
+// Enhanced structured data for specific pages
+const getPageSpecificStructuredData = () => {
+	const pathname = Astro.url.pathname;
+
+	if (pathname.includes("/about")) {
+		return {
+			"@context": "https://schema.org",
+			"@type": "AboutPage",
+			name: "About Bartłomiej Miłosz - Architectural Precision for Data Challenges",
+			description:
+				"Learn how 4+ years of architectural consulting provides unique analytical perspective for data analytics",
+			url: canonicalURL.toString(),
+			mainEntity: structuredData,
+		};
+	}
+
+	if (pathname.includes("/resume")) {
+		return {
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			name: "Bartłomiej Miłosz - Professional Resume",
+			description:
+				"Analytical professional resume showcasing systematic problem-solving skills and stakeholder communication experience",
+			url: canonicalURL.toString(),
+			mainEntity: structuredData,
+		};
+	}
+
+	if (pathname.includes("/projects")) {
+		return {
+			"@context": "https://schema.org",
+			"@type": "CollectionPage",
+			name: "Projects Portfolio - Bartłomiej Miłosz",
+			description:
+				"Portfolio demonstrating analytical thinking evolution from architectural projects to data analytics applications",
+			url: canonicalURL.toString(),
+		};
+	}
+
+	return structuredData;
 };
 ---
 
@@ -105,120 +198,206 @@ const structuredData = {
 <title>{title}</title>
 <meta name="generator" content={Astro.generator} />
 
-<!-- SEO & Personal Branding -->
+<!-- Enhanced SEO & Personal Branding -->
 <meta name="description" content={description} />
 <meta name="keywords" content={allKeywords} />
 <meta name="author" content="Bartłomiej Miłosz" />
-<meta name="google-site-verification" content="J7TZMTAzkpS-OZVZkn5-QmHWtmekk5EMFCerf3LsBtE" />
-<meta name="robots" content={noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1'} />
+<meta
+  name="google-site-verification"
+  content="J7TZMTAzkpS-OZVZkn5-QmHWtmekk5EMFCerf3LsBtE"
+/>
+<meta
+  name="robots"
+  content={noIndex
+    ? "noindex, nofollow"
+    : "index, follow, max-image-preview:large, max-snippet:-1"}
+/>
 
-<!-- Geographic & Career Context -->
-<meta name="geo.region" content="PL-MZ" />
-<meta name="geo.placename" content="Warsaw, Poland" />
+<!-- Enhanced Geographic & Career Context -->
+<meta name="geo.region" content="PL-14" />
+<meta name="geo.placename" content="Warsaw, Mazovia, Poland" />
+<meta name="geo.position" content="52.2297;21.0122" />
+<meta name="ICBM" content="52.2297, 21.0122" />
 <meta name="DC.title" content={title} />
 <meta name="DC.creator" content="Bartłomiej Miłosz" />
-<meta name="DC.subject" content="Career Transition, Data Analytics, Architecture" />
+<meta
+  name="DC.subject"
+  content="Analytical Career Transition, Data Analytics, Systematic Problem-Solving, Architecture"
+/>
+<meta name="DC.description" content={description} />
 <meta name="DC.language" content="en" />
+<meta name="DC.coverage" content="Warsaw, Poland" />
 
 <!-- Performance & Resource Hints -->
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//github.com" />
+<link rel="dns-prefetch" href="//linkedin.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 <!-- Fonts with optimized loading -->
-<link rel="preload" as="font" type="font/woff2" href={interWoff2} crossorigin="anonymous" />
-<link rel="preload" as="font" type="font/woff2" href={newsreaderWoff2} crossorigin="anonymous" />
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href={interWoff2}
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href={newsreaderWoff2}
+  crossorigin="anonymous"
+/>
 
-<!-- Favicons & App Icons -->
+<!-- Enhanced Favicons & App Icons -->
 <link rel="icon" href="/favicon.ico" sizes="32x32" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#1a1a1a" />
 <meta name="msapplication-TileColor" content="#1a1a1a" />
+<meta name="msapplication-config" content="/browserconfig.xml" />
 
 <!-- Technical SEO -->
 <link rel="sitemap" href="/sitemap-index.xml" />
-<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed - Bartłomiej Miłosz" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="/rss.xml"
+  title="RSS Feed - Bartłomiej Miłosz Analytics Journey"
+/>
 <link rel="canonical" href={formatCanonicalURL(canonicalURL)} />
 
-<!-- Open Graph / Facebook -->
+<!-- Enhanced Open Graph / Facebook -->
 <meta property="og:type" content={pageType} />
 <meta property="og:url" content={formatCanonicalURL(canonicalURL)} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:site_name" content="Bartłomiej Miłosz - Architect to Analytics Portfolio" />
+<meta
+  property="og:site_name"
+  content="Bartłomiej Miłosz - Architectural Precision for Data Challenges"
+/>
 <meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="pl_PL" />
 {resolvedImage?.src && <meta property="og:image" content={resolvedImage.src} />}
-{resolvedImage?.alt && <meta property="og:image:alt" content={resolvedImage.alt} />}
+{
+  resolvedImage?.alt && (
+    <meta property="og:image:alt" content={resolvedImage.alt} />
+  )
+}
 {resolvedImage?.src && <meta property="og:image:width" content="1200" />}
 {resolvedImage?.src && <meta property="og:image:height" content="630" />}
+{resolvedImage?.src && <meta property="og:image:type" content="image/webp" />}
 
 <!-- Enhanced Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content={formatCanonicalURL(canonicalURL)} />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:creator" content="@your_twitter_handle" />
-<meta name="twitter:site" content="@your_twitter_handle" />
-{resolvedImage?.src && <meta name="twitter:image" content={resolvedImage.src} />}
-{resolvedImage?.alt && <meta name="twitter:image:alt" content={resolvedImage.alt} />}
+<meta name="twitter:creator" content="@MiOmiej" />
+<meta name="twitter:site" content="@MiOmiej" />
+{
+  resolvedImage?.src && (
+    <meta name="twitter:image" content={resolvedImage.src} />
+  )
+}
+{
+  resolvedImage?.alt && (
+    <meta name="twitter:image:alt" content={resolvedImage.alt} />
+  )
+}
 
 <!-- LinkedIn Optimization -->
 <meta property="og:profile:first_name" content="Bartłomiej" />
 <meta property="og:profile:last_name" content="Miłosz" />
+<meta property="profile:username" content="bartlomiej-milosz" />
 
 <!-- Article-specific meta for blog posts -->
-{pageType === 'article' && (
+{
+  pageType === "article" && (
     <>
-        <meta property="article:author" content="Bartłomiej Miłosz" />
-        <meta property="article:publisher" content="https://bartlomiej-milosz.github.io" />
-        <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content="Bartłomiej Miłosz" />
-        <meta name="twitter:label2" content="Filed under" />
-        <meta name="twitter:data2" content="Career Transition, Data Analytics" />
+      <meta property="article:author" content="Bartłomiej Miłosz" />
+      <meta
+        property="article:publisher"
+        content="https://bartlomiej-milosz.github.io"
+      />
+      <meta property="article:section" content="Career Transition" />
+      <meta property="article:tag" content="Data Analytics" />
+      <meta property="article:tag" content="Architecture" />
+      <meta property="article:tag" content="Career Change" />
+      <meta name="twitter:label1" content="Written by" />
+      <meta name="twitter:data1" content="Bartłomiej Miłosz" />
+      <meta name="twitter:label2" content="Filed under" />
+      <meta name="twitter:data2" content="Career Transition, Data Analytics" />
     </>
-)}
+  )
+}
 
-<!-- Structured Data for Rich Results -->
-<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+<!-- Enhanced Structured Data for Rich Results -->
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(getPageSpecificStructuredData())}
+/>
 
-<!-- Career Transition & Recruitment SEO -->
-<meta name="employment-type" content="Full-time, Contract, Freelance" />
-<meta name="job-function" content="Data Analytics, Business Analysis" />
-<meta name="industry" content="Technology, Data Science, Business Intelligence" />
-<meta name="career-level" content="Junior, Entry-level with Business Experience" />
-<meta name="location" content="Warsaw, Poland" />
+<!-- Enhanced Career Transition & Recruitment SEO -->
+<meta name="employment-type" content="Full-time, Contract, Freelance, Remote" />
+<meta
+  name="job-function"
+  content="Data Analytics, Business Analysis, Business Intelligence"
+/>
+<meta
+  name="industry"
+  content="Technology, Data Science, Business Intelligence, PropTech, Construction Analytics"
+/>
+<meta
+  name="career-level"
+  content="Junior, Entry-level with Business Experience, Career Changer"
+/>
+<meta name="location" content="Warsaw, Poland, Remote, Hybrid" />
+<meta
+  name="experience-type"
+  content="Client Consulting, Stakeholder Communication, Systematic Analysis"
+/>
 
-<!-- Professional Skills Meta -->
-<meta name="skills" content="Data Analysis, Python, Excel, Project Management, Client Consulting, Architecture, Business Intelligence" />
-<meta name="education" content="PJATK Computer Science, Architecture Masters" />
-<meta name="experience-years" content="4+ years client consulting" />
+<!-- Enhanced Professional Skills Meta -->
+<meta
+  name="skills"
+  content="Systematic Problem-Solving, Stakeholder Communication, Requirements Analysis, Data Analysis, Python, Excel, Project Coordination, Business Intelligence, Client Consulting, Architecture, Spatial Analysis"
+/>
+<meta
+  name="education"
+  content="PJATK Computer Science, Architecture Masters, Maven Analytics"
+/>
+<meta
+  name="experience-years"
+  content="4+ years client consulting, systematic analysis"
+/>
+<meta
+  name="certifications"
+  content="Maven Analytics (in progress), PJATK Computer Science (in progress)"
+/>
+<meta name="languages" content="Polish (native), English (C1)" />
+<meta name="work-authorization" content="EU, Poland" />
 
-<!-- Rich Results for Career Pages -->
-{Astro.url.pathname.includes('/resume') && (
-    <script type="application/ld+json" set:html={JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Bartłomiej Miłosz - Resume",
-        "description": "Professional resume of Bartłomiej Miłosz - Interior Architect transitioning to Data Analytics",
-        "url": canonicalURL.toString(),
-        "mainEntity": {
-            "@type": "Person",
-            "name": "Bartłomiej Miłosz",
-            "hasOccupation": [
-                {
-                    "@type": "Occupation",
-                    "name": "Interior Architect",
-                    "experienceRequirements": "4+ years"
-                },
-                {
-                    "@type": "Occupation", 
-                    "name": "Data Analyst",
-                    "occupationLocation": {
-                        "@type": "City",
-                        "name": "Warsaw"
-                    }
-                }
-            ]
-        }
-    })} />
-)}
+<!-- Accessibility & Performance -->
+<meta name="color-scheme" content="light dark" />
+<meta name="prefers-color-scheme" content="light" />
+
+<!-- Enhanced career-specific meta for ATS systems -->
+<meta
+  name="career-objective"
+  content="Leverage architectural analytical experience for data analytics challenges"
+/>
+<meta
+  name="unique-value-proposition"
+  content="Systematic problem-solving with stakeholder communication skills"
+/>
+<meta
+  name="target-roles"
+  content="Junior Data Analyst, Business Analyst, Data Analytics Associate"
+/>
+<meta
+  name="specializations"
+  content="PropTech, Construction Analytics, Spatial Data, Business Intelligence"
+/>

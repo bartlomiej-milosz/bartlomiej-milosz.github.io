@@ -1,44 +1,84 @@
 ---
 title: About
-titleClass: "text-4xl" # This would be 36px in Tailwind
 seo:
-  title: About Me
-  description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
-  image:
-    src: '/hero.webp'
-    alt: A person sitting at a desk in front of a computer
+  title: "About Bartłomiej Miłosz - Architect to Data Analytics Career Transition"
+  description: "Learn about my journey from interior architecture to data analytics. 4+ years client consulting experience, currently studying Computer Science at PJATK Warsaw."
+  pageType: "website"
 ---
 
-![Alt text for image](/hero.webp)
+![Bartłomiej Miłosz - Professional photo](/hero.webp)
 
-**Note!:** This about page is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+## From Designing Homes to Designing Solutions
 
-## Ethan Donovan - Web Developer based in Estonia
+For the past four years, I've been in the business of turning complex requirements into clear solutions. My clients weren't just buying architectural services—they were investing in their families' futures, making decisions about spaces where children would grow up and memories would be made.
 
-**Greetings!** I'm Ethan Donovan, a passionate web developer residing in the picturesque landscapes of [Estonia](https://en.wikipedia.org/wiki/Estonia). With a keen eye for design and a love for crafting seamless digital experiences, I bring a unique blend of creativity and technical expertise to the world of web development.
+That responsibility taught me something invaluable: **the best solutions come from truly understanding what people need, not just what they say they want.**
 
-## Skills and Expertise
+## The Architecture of Problem-Solving
 
-I specialize in front-end and back-end development, utilizing the latest technologies to build responsive and user-friendly websites. My proficiency includes **HTML**, **CSS**, **JavaScript**, and frameworks such as **Astro.js** for dynamic and interactive user interfaces. On the server side, I'm well-versed in Node.js and have experience with database management systems like MongoDB.
+Every project began the same way: a family with dreams, constraints, and competing priorities. A young couple wanting an open kitchen but worried about noise reaching the baby's room. Parents planning for aging in place while accommodating teenage independence. Investors balancing aesthetic appeal with rental market demands.
 
-## Innovation and Problem-Solving
+My job wasn't just designing spaces—it was **analyzing complex, multi-variable problems and finding elegant solutions** that satisfied everyone involved.
 
-I thrive on solving complex problems and transforming ideas into functional, elegant websites. Whether it's optimizing performance, implementing new features, or troubleshooting issues, I approach each challenge with enthusiasm and a commitment to delivering high-quality solutions.
+**Here's what that actually looked like:**
+- Translating abstract client visions into concrete technical specifications
+- Analyzing site conditions, zoning regulations, and budget constraints simultaneously  
+- Coordinating between contractors, suppliers, and municipal authorities
+- Presenting technical concepts to non-technical stakeholders in language they understood
+- Adapting quickly when project requirements changed mid-execution
 
-## Global Perspective, Local Impact
+Managing projects worth over $2M taught me that successful outcomes depend on **systematic analysis, clear communication, and data-driven decision making**.
 
-Living in Estonia has not only influenced my appreciation for nature and culture but has also shaped my approach to web development. I understand the importance of creating digital solutions that resonate with local audiences while maintaining a global perspective.
+## The Realization
 
-## Continuous Learning
+The turning point came during a particularly complex residential project. The client kept asking for "more data" to support design decisions—energy efficiency projections, cost-benefit analyses of material choices, demographic research on neighborhood trends.
 
-The dynamic nature of the tech industry inspires me to stay up-to-date with the latest trends and advancements. I'm always eager to expand my skill set and embrace emerging technologies that enhance the functionality and aesthetics of the websites I create.
+As I compiled spreadsheets comparing insulation R-values and calculating ROI on solar installations, I realized something: **I wasn't just designing buildings anymore. I was doing data analysis.**
 
-## Collaboration and Communication
+And I loved it.
 
-I believe in the power of collaboration and effective communication. Whether working with clients, designers, or fellow developers, I value clear communication to ensure the success of every project.
+That's when I asked myself: *What if I could help not just individual families optimize their biggest investment, but help businesses optimize their strategies, understand their customers, and make better decisions about their future?*
 
-## Get in Touch
+The answer led me to data analytics.
 
-Are you looking to elevate your online presence or bring your digital ideas to life? I'd love to hear from you! Feel free to reach out for collaboration, consultation, or just a friendly chat about all things web development.
+## Building New Foundations
 
-_Let's build something amazing together!_
+Rather than starting from scratch, I'm building on four years of proven analytical experience. The skills that made me successful in architecture—requirement analysis, stakeholder communication, systematic problem-solving—are exactly what businesses need in their data analysts.
+
+**Currently, I'm expanding my technical toolkit:**
+- **Computer Science studies** at PJATK Warsaw, Poland's #3 ranked CS program for graduate earnings
+- **Maven Analytics coursework** in business intelligence and data visualization
+- **Programming projects** in Python, Java, and JavaScript, applying lessons from architectural project management
+- **Advanced Excel modeling** for business analysis, building on cost estimation experience
+
+## What Makes Me Different
+
+Most junior data analysts excel at technical skills but struggle with business communication. Most business analysts understand stakeholder needs but lack technical depth.
+
+**I bring both.**
+
+My architecture background gives me something rare in early-career analytics: **real experience translating complex technical concepts into actionable insights for people making significant financial decisions.**
+
+I've sat across the table from clients investing their life savings and needed to explain why one approach was worth 20% more than another. I've facilitated discussions between engineers and homeowners who spoke completely different languages. I've turned abstract requirements into concrete deliverables under strict deadlines and budgets.
+
+**That's exactly what businesses need from their data analysts.**
+
+## Looking Forward
+
+My goal is to join a team where I can apply this unique combination of technical skills and business communication to help organizations make better decisions about their customers, products, and growth strategies.
+
+Whether it's analyzing customer behavior patterns, optimizing marketing spend, or identifying new market opportunities, I'm excited to tackle business challenges that impact thousands of people instead of dozens.
+
+I bring architectural precision to data problems—systematic, detail-oriented analysis combined with the ability to communicate insights clearly to stakeholders who need to understand not just what the data says, but what it means for their business.
+
+## Beyond Work
+
+When I'm not studying or working on projects, I'm usually exploring Warsaw's evolving urban landscape (old habits from architecture), following developments in AI and data science, or planning my next learning milestone. I believe in continuous growth and systematic improvement—principles that have served me well in both architecture and analytics.
+
+## Let's Connect
+
+I'm always interested in connecting with professionals who understand that the best analytical solutions come from understanding both the technical possibilities and the human needs behind the data.
+
+Whether you're building a team, looking for a unique perspective on business challenges, or just want to discuss how design thinking applies to data problems, I'd love to hear from you.
+
+**Ready to see how architectural thinking can improve your data challenges?** [Get in touch](/contact) or explore my [project portfolio](/projects).
