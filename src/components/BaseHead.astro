@@ -1,5 +1,4 @@
 ---
-// Zastąpione nieużywane fonty na te, które faktycznie używasz
 import latoWoff2 from "@fontsource/lato/files/lato-latin-400-normal.woff2?url";
 import loraWoff2 from "@fontsource-variable/lora/files/lora-latin-wght-normal.woff2?url";
 import jetbrainsWoff2 from "@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2?url";
@@ -124,20 +123,6 @@ const structuredData = {
 			skills: "Python, Excel, data visualization, business intelligence",
 		},
 	],
-	seeks: {
-		"@type": "JobPosting",
-		title: "Junior Data Analyst Position",
-		description:
-			"Seeking opportunities to apply systematic problem-solving and stakeholder communication skills to data analytics challenges",
-		jobLocation: {
-			"@type": "Place",
-			address: {
-				"@type": "PostalAddress",
-				addressLocality: "Warsaw",
-				addressCountry: "Poland",
-			},
-		},
-	},
 	sameAs: [
 		"https://linkedin.com/in/bartlomiej-milosz",
 		"https://github.com/bartlomiejMilosz",
@@ -236,7 +221,6 @@ const getPageSpecificStructuredData = () => {
 <link rel="dns-prefetch" href="//linkedin.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<!-- Poprawione preloadowanie fontów - używamy tylko te, które faktycznie masz -->
 <link
   rel="preload"
   as="font"
@@ -251,14 +235,13 @@ const getPageSpecificStructuredData = () => {
   href={loraWoff2}
   crossorigin="anonymous"
 />
-<!-- Opcjonalnie JetBrains Mono - odkomentuj jeśli używasz kodu na stronie -->
-<!-- <link
+<link
   rel="preload"
   as="font"
   type="font/woff2"
   href={jetbrainsWoff2}
   crossorigin="anonymous"
-/> -->
+/>
 
 <!-- Enhanced Favicons & App Icons -->
 <link rel="icon" href="/favicon.ico" sizes="32x32" />
@@ -344,7 +327,7 @@ const getPageSpecificStructuredData = () => {
   )
 }
 
-<!-- Enhanced Structured Data for Rich Results -->
+<!-- Structured Data for Rich Results - usunięto JobPosting schema -->
 <script
   type="application/ld+json"
   set:html={JSON.stringify(getPageSpecificStructuredData())}
