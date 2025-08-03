@@ -11,7 +11,6 @@ export default defineConfig({
 		plugins: [tailwindcss()],
 		server: {
 			headers: {
-				// Poprawny nagłówek Permissions-Policy
 				"Permissions-Policy": "browsing-topics=(), interest-cohort=(), camera=(), microphone=(), geolocation=()"
 			}
 		}
