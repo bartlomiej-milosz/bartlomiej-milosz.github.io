@@ -9,11 +9,19 @@ export async function GET(context) {
         title: siteConfig.title,
         description: siteConfig.description,
         site: context.site,
+        language: 'en-US',
+        managingEditor: 'bartlomiej.milosz@gmail.com (Bartłomiej Miłosz)',
+        webMaster: 'bartlomiej.milosz@gmail.com (Bartłomiej Miłosz)',
+        copyright: `© ${new Date().getFullYear()} Bartłomiej Miłosz`,
+        
         items: posts.map((item) => ({
             title: item.data.title,
-            description: item.data.excerpt,
+            description: item.data.excerpt || item.data.description,
             link: `/blog/${item.id}/`,
-            pubDate: item.data.publishDate.setUTCHours(0)
+            pubDate: item.data.publishDate.setUTCHours(0),
+            author: 'bartlomiej.milosz@gmail.com (Bartłomiej Miłosz)',
+            categories: item.data.tags || [],
+            guid: `https://bartlomiej-milosz.github.io/blog/${item.id}/`,
         }))
     });
 }
