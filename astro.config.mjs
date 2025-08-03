@@ -9,7 +9,6 @@ export default defineConfig({
 	site: siteConfig.website,
 	vite: {
 		plugins: [tailwindcss()],
-		// Headers dla development i production
 		server: {
 			headers: {
 				"Permissions-Policy": "browsing-topics=(), interest-cohort=(), camera=(), microphone=(), geolocation=()"
@@ -24,7 +23,6 @@ export default defineConfig({
 	integrations: [
 		mdx(), 
 		sitemap({
-			// Opcjonalne: customize sitemap generation
 			changefreq: 'weekly',
 			priority: 0.7,
 			lastmod: new Date(),
@@ -38,7 +36,6 @@ export default defineConfig({
 			},
 		},
 	},
-	// Dodatkowe optimizations
 	compressHTML: true,
 	build: {
 		inlineStylesheets: 'auto'
