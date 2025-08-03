@@ -1,0 +1,27 @@
+{
+  "name": "Bartłomiej Miłosz - Portfolio",
+  "short_name": "BM Portfolio",
+  "description": "Interior Architect transitioning to Data Analytics - Portfolio and Blog",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#171717",
+  "background_color": "#f2f1ec",
+  "lang": "en"
+}
