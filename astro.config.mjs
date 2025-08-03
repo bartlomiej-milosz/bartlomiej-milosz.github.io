@@ -9,6 +9,12 @@ export default defineConfig({
 	site: siteConfig.website,
 	vite: {
 		plugins: [tailwindcss()],
+		server: {
+			headers: {
+				// Poprawny nagłówek Permissions-Policy
+				"Permissions-Policy": "browsing-topics=(), interest-cohort=(), camera=(), microphone=(), geolocation=()"
+			}
+		}
 	},
 	integrations: [mdx(), sitemap()],
 	markdown: {

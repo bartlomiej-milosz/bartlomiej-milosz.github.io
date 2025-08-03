@@ -1,6 +1,8 @@
 ---
-import interWoff2 from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
-import newsreaderWoff2 from "@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2?url";
+// Zastąpione nieużywane fonty na te, które faktycznie używasz
+import latoWoff2 from "@fontsource/lato/files/lato-latin-400-normal.woff2?url";
+import loraWoff2 from "@fontsource-variable/lora/files/lora-latin-wght-normal.woff2?url";
+import jetbrainsWoff2 from "@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2?url";
 import siteConfig from "../data/site-config";
 import "../styles/global.css";
 
@@ -234,29 +236,37 @@ const getPageSpecificStructuredData = () => {
 <link rel="dns-prefetch" href="//linkedin.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<!-- Fonts with optimized loading -->
+<!-- Poprawione preloadowanie fontów - używamy tylko te, które faktycznie masz -->
 <link
   rel="preload"
   as="font"
   type="font/woff2"
-  href={interWoff2}
+  href={latoWoff2}
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
   type="font/woff2"
-  href={newsreaderWoff2}
+  href={loraWoff2}
   crossorigin="anonymous"
 />
+<!-- Opcjonalnie JetBrains Mono - odkomentuj jeśli używasz kodu na stronie -->
+<!-- <link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href={jetbrainsWoff2}
+  crossorigin="anonymous"
+/> -->
 
 <!-- Enhanced Favicons & App Icons -->
 <link rel="icon" href="/favicon.ico" sizes="32x32" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link rel="manifest" href="/site.webmanifest" />
-<meta name="theme-color" content="#1a1a1a" />
-<meta name="msapplication-TileColor" content="#1a1a1a" />
+<meta name="theme-color" content="#171717" />
+<meta name="msapplication-TileColor" content="#171717" />
 <meta name="msapplication-config" content="/browserconfig.xml" />
 
 <!-- Technical SEO -->
