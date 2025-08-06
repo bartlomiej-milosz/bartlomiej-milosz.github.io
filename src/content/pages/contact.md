@@ -8,62 +8,29 @@ seo:
       "contact data analyst Warsaw",
       "hire junior analyst",
       "architectural analytics consultant",
-      "data analytics career transition",
     ]
 ---
 
 ## Ready to Discuss Your Data Challenges?
 
-Whether you're looking to **hire a junior data analyst** with unique architectural problem-solving experience, interested in my **career transition journey**, or want to explore how **systematic analytical thinking** can benefit your organization, I'd love to connect.
+I'm a junior data analyst with **4+ years of systematic problem-solving experience** from architecture. Currently available for data analytics roles, analytical projects, and career transition conversations.
 
-## What I Can Help With
+### Let's Connect
 
-**For Hiring Managers & Recruiters:**
+**Email:** [bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com)  
+**LinkedIn:** [Professional networking and career discussions](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/)  
+**GitHub:** [Technical projects and code samples](https://github.com/bartlomiej-milosz)  
+**Twitter/X:** [Industry insights and learning journey](https://x.com/MiOmiej)
 
-- Junior data analyst positions combining technical skills with proven stakeholder communication
-- Roles requiring systematic problem-solving and requirements analysis experience
-- Opportunities in PropTech, construction analytics, or spatial data analysis
+### Currently Available For
 
-**For Fellow Career Changers:**
-
-- Insights from transitioning between analytical fields
-- Strategies for positioning transferable skills
-- Technical learning roadmap for architecture → analytics transition
-
-**For Industry Professionals:**
-
-- Discussions about applying architectural thinking to data problems
-- Networking around Warsaw's growing analytics community
-- Collaboration on projects bridging physical and digital analysis
-
-## Let's Connect
-
-**Email** (preferred for detailed discussions):  
-[bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com)
-
-**Professional Networking:**  
-[LinkedIn](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/) - Best for career discussions and professional updates
-
-**Technical Projects:**  
-[GitHub](https://github.com/bartlomiej-milosz) - See my coding progress and analytical projects
-
-**Industry Insights:**  
-[Twitter/X](https://x.com/MiOmiej) - Following data analytics trends and sharing learning journey
-
-## Response Time
-
-I typically respond to professional inquiries within **24 hours on weekdays**. For urgent opportunities or time-sensitive discussions, please mention this in your subject line.
-
-## Currently Available For
-
-- **Full-time junior data analyst positions** (Warsaw or remote)  
-- **Contract/freelance** analytical projects  
-- **Informational interviews** about career transition  
-- **Networking conversations** with analytics professionals  
-- **Speaking opportunities** about architectural thinking in data analysis
+- **Junior data analyst positions** (Warsaw or remote)
+- **Analytical consulting projects**  
+- **Career transition insights** for fellow professionals
+- **Speaking opportunities** about architectural thinking in analytics
 
 ---
 
-**Ready to see how architectural precision can improve your data challenges?**
+**Response time:** Within 24 hours on weekdays. For urgent opportunities, please mention in your subject line.
 
-I look forward to hearing from you and exploring how my unique combination of systematic problem-solving experience and growing technical skills can contribute to your organization's analytical needs.
+Ready to see how architectural precision can improve your data challenges? I'd love to hear from you.

@@ -66,10 +66,10 @@ const siteConfig: SiteConfig = {
 			text: "About",
 			href: "/about",
 		},
-        {
+		{
 			text: "Contact",
 			href: "/contact",
-		}
+		},
 	],
 	footerNavLinks: [
 		{
@@ -100,18 +100,18 @@ const siteConfig: SiteConfig = {
 		},
 		{
 			text: "Twitter/X",
-			href: "https://x.com/MiOmiej"
-		}
+			href: "https://x.com/MiOmiej",
+		},
 	],
 	hero: {
 		title: "From Living Solutions to Data Insights",
-		text: `I transform complex requirements into clear solutions. **Over 4 years in architecture**, I helped families optimize their most important investment—their homes.
+		text: `I've spent **4+ years helping families** make their biggest investment decisions—designing homes that work for their lives.
 
-Now I'm applying the same analytical thinking to help businesses optimize their most valuable asset—their data.
+Now I'm applying that same analytical approach to help businesses make sense of their data.
 
-My unique approach combines systematic problem-solving with stakeholder communication skills that most junior analysts lack. Currently expanding my technical toolkit through **Computer Science studies at PJATK** while leveraging proven experience in requirements analysis, project coordination, and translating complex information into actionable insights.
+Architecture taught me how to **break down complex problems**, communicate clearly with stakeholders, and turn requirements into solutions. I'm building on this foundation with **Computer Science studies at PJATK** and hands-on experience in Python and Excel.
 
-**Ready to bring architectural precision to data challenges.**`,
+**Ready to bring systematic thinking to your data challenges.**`,
 		image: {
 			src: "/hero.webp",
 			alt: "Bartłomiej Miłosz - Architect transitioning to Data Analytics",

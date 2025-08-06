@@ -1,46 +1,59 @@
 ---
-import { type CollectionEntry, getCollection, render } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Button from '../components/Button.astro';
+import { type CollectionEntry, getCollection, render } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/Button.astro";
 
 export async function getStaticPaths() {
-    const pages = await getCollection('pages');
-    
-    // Filter out system paths that shouldn't be handled as content
-    const validPages = pages.filter(page => 
-        !page.id.startsWith('.well-known') && 
-        !page.id.includes('favicon')
-    );
-    
-    return validPages.map((page) => ({
-        params: { id: page.id },
-        props: { page }
-    }));
+  const pages = await getCollection("pages");
+
+  // Filter out system paths that shouldn't be handled as content
+  const validPages = pages.filter(
+    (page) => !page.id.startsWith(".well-known") && !page.id.includes("favicon")
+  );
+
+  return validPages.map((page) => ({
+    params: { id: page.id },
+    props: { page },
+  }));
 }
 
-type Props = { page: CollectionEntry<'pages'> };
+type Props = { page: CollectionEntry<"pages"> };
 
 const { page } = Astro.props;
 const { title, seo } = page.data;
 const { Content } = await render(page);
-const isResume = page.id === 'resume';
+const isResume = page.id === "resume";
 ---
 
-<BaseLayout title={seo?.title ?? title} description={seo?.description} image={seo?.image} showHeader={false}>
-    <article class="mb-16 sm:mb-24">
-        <header class="mb-8">
-            <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{title}</h1>
-        </header>
-        {/* Resume download button - resume page only */}
-        {isResume && (
-            <div class="mb-8">
-                <Button href="/resume.pdf" target="_blank">
-                    Download as PDF
-                </Button>
-            </div>
-        )}
-        <div class="max-w-none prose sm:prose-lg">
-            <Content />
+<BaseLayout
+  title={seo?.title ?? title}
+  description={seo?.description}
+  image={seo?.image}
+  showHeader={false}
+>
+  <article class="mb-16 sm:mb-24">
+    <header class="mb-8">
+      <h1
+        class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight"
+      >
+        {title}
+      </h1>
+    </header>
+    {/* Resume download button - resume page only */}
+    {
+      isResume && (
+        <div class="mb-16 flex gap-4">
+          <Button href="/resume.pdf" target="_blank">
+            View Resume
+          </Button>
+          <Button href="/resume.pdf" download>
+            Download Resume
+          </Button>
         </div>
-    </article>
+      )
+    }
+    <div class="max-w-none prose sm:prose-lg">
+      <Content />
+    </div>
+  </article>
 </BaseLayout>
