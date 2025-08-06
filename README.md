@@ -1,184 +1,114 @@
-# Bartłomiej Miłosz - Personal Portfolio
+# Bartłomiej Miłosz - Portfolio Website
 
-A modern, responsive portfolio website showcasing my journey from interior architecture to data analytics. Built with Astro.js and Tailwind CSS, featuring a clean design with dark/light mode support.
+A modern, responsive portfolio showcasing my transition from interior architecture to data analytics. Demonstrates technical skills, project management experience, and systematic problem-solving approach.
 
 ![Portfolio Preview Light](public/bm-preview-light.png)
 ![Portfolio Preview Dark](public/bm-preview-dark.png)
 
-🌐 **Live Demo:** [https://bartlomiej-milosz.github.io](https://bartlomiej-milosz.github.io)
+**Live Portfolio:** [https://bartlomiej-milosz.github.io](https://bartlomiej-milosz.github.io)
 
-## About Me
+## About This Project
 
-I'm **Bartłomiej Miłosz**, an interior architect transitioning into data analytics. I combine my business consulting background with growing technical skills in Python, Excel, and data analysis to solve problems through data. Currently studying Computer Science at PJATK and actively building my analytical skillset.
+This portfolio website represents my approach to technical challenges: **systematic planning, clean execution, and user-focused design**. Built while transitioning careers, it demonstrates both my growing technical skills and my ability to deliver professional web solutions.
 
-## Features
+### Technical Decisions & Why
 
-- ✅ **Responsive Design** - Mobile-first approach with modern UI
-- ✅ **Dark/Light Mode** - Toggle between themes with smooth transitions
-- ✅ **Portfolio Showcase** - Dedicated sections for projects and case studies
-- ✅ **Blog Integration** - Share insights and learning journey
-- ✅ **SEO Optimized** - Meta tags, sitemap, and OpenGraph support
-- ✅ **Fast Performance** - Built with Astro.js for optimal loading speeds
-- ✅ **Multi-language Support** - Content available in Polish and English
+**Astro.js Framework Choice:**
 
-## Tech Stack
+- Static site generation for optimal performance
+- Component-based architecture for maintainability
+- TypeScript integration for type safety
+- SEO optimization built-in
 
-### Frontend Framework
-- **[Astro.js](https://astro.build)** - Static site generator
-- **[Tailwind CSS](https://tailwindcss.com)** - Utility-first CSS framework
-- **[TypeScript](https://www.typescriptlang.org)** - Type-safe JavaScript
+**Design & UX Strategy:**
 
-### UI & Styling
-- **Lato** - Primary sans-serif font family
-- **Lora Variable** - Serif font for headings
-- **JetBrains Mono** - Monospace font for code
-- **Custom CSS Variables** - Theme system for dark/light modes
+- Mobile-first responsive design
+- Dark/light mode supporting user preferences
+- Clean typography hierarchy for professional presentation
+- Performance-focused loading with optimized assets
 
-### Content Management
-- **Markdown/MDX** - Content authoring with component support
-- **Content Collections** - Type-safe content management
-- **Static Assets** - Optimized image handling
+**Content Architecture:**
 
-## Project Structure
+- Structured markdown content with type-safe collections
+- Dynamic routing for scalable blog/project management
+- SEO-optimized meta tags and structured data
+- Professional resume integration with download functionality
 
-```text
-├── public/                 # Static assets
-│   ├── bm-preview-light.jpg
-│   ├── bm-preview-dark.jpg
-│   └── ...
-├── src/
-│   ├── components/         # Reusable UI components
-│   ├── content/           # Markdown content
-│   │   ├── blog/          # Blog posts
-│   │   ├── pages/         # Static pages
-│   │   └── projects/      # Portfolio projects
-│   ├── data/              # Site configuration
-│   ├── layouts/           # Page layouts
-│   ├── pages/             # Route pages
-│   ├── styles/            # Global styles and themes
-│   └── utils/             # Helper functions
-├── astro.config.mjs       # Astro configuration
-├── tailwind.config.mjs    # Tailwind configuration
-└── tsconfig.json          # TypeScript configuration
-```
+## My Background
 
-## Getting Started
+**Interior Architect → Data Analytics Professional**
 
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn package manager
+Combining **4+ years of client consulting experience** with growing technical expertise in Python and data analysis. Currently studying Computer Science at PJATK Warsaw while building practical analytical skills through real projects.
 
-### Installation
+**What this portfolio demonstrates:**
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/bartlomiejMilosz/bartlomiej-milosz.github.io.git
-   cd bartlomiej-milosz.github.io
-   ```
+- Systematic approach to learning new technologies
+- Ability to deliver complete, professional solutions
+- Strong attention to detail and user experience
+- Communication skills through clear content presentation
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+## Technical Stack
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+**Frontend & Build:**
 
-4. **Open your browser**
-   Navigate to `http://localhost:4321`
+- Astro.js (Static Site Generation)
+- TypeScript (Type Safety)
+- Tailwind CSS (Utility-First Styling)
 
-### Build Commands
+**Content & SEO:**
 
-| Command | Action |
-|---------|--------|
-| `npm run dev` | Start development server at `localhost:4321` |
-| `npm run build` | Build production site to `./dist/` |
-| `npm run preview` | Preview build locally before deploying |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro check` |
+- Markdown/MDX Content Collections
+- Structured Data (Schema.org)
+- OpenGraph & Twitter Cards
+- Sitemap & RSS Feed Generation
 
-## Content Management
+**Development & Deployment:**
 
-### Adding Blog Posts
-Create new `.md` or `.mdx` files in `src/content/blog/`:
+- Git Version Control
+- GitHub Actions (Automated Deployment)
+- GitHub Pages Hosting
+- Performance Optimization
 
-```markdown
----
-title: "Your Post Title"
-description: "Brief description"
-publishDate: "2024-08-02"
-tags: ["tag1", "tag2"]
----
+## Key Features Implemented
 
-Your content here...
-```
+- **Professional Portfolio Sections** - Projects, resume, about, contact  
+- **Responsive Design** - Mobile-first approach across all devices  
+- **Theme System** - Dark/light mode with smooth transitions  
+- **SEO Optimization** - Meta tags, structured data, performance  
+- **Content Management** - Type-safe markdown collections  
+- **Performance Focused** - Optimized loading and Core Web Vitals
 
-### Adding Projects
-Create new project files in `src/content/projects/`:
+## Project Highlights
 
-```markdown
----
-title: "Project Name"
-description: "Project description"
-publishDate: "2024-08-02"
-isFeatured: true
-seo:
-  image:
-    src: "/project-image.jpg"
-    alt: "Project screenshot"
----
+**Planning & Architecture:**
 
-Project details and case study...
-```
+- Systematic content strategy reflecting career transition narrative
+- Component-based design system for consistency
+- Performance-optimized asset handling
 
-### Customizing Site Configuration
-Edit `src/data/site-config.ts` to update:
-- Site metadata and SEO
-- Navigation links
-- Social media links
-- Hero section content
-- Contact information
+**Technical Implementation:**
 
-## Deployment
+- Custom TypeScript configurations for type safety
+- Advanced Tailwind CSS theming system
+- Structured data implementation for search engine optimization
+- Automated deployment pipeline with GitHub Actions
 
-This site is automatically deployed to GitHub Pages via GitHub Actions. Every push to the main branch triggers a new deployment.
+**Business Focus:**
 
-### Manual Deployment
-```bash
-npm run build
-# Deploy the ./dist/ folder to your hosting provider
-```
+- Professional presentation suitable for recruitment
+- Clear value proposition and career positioning
+- Conversion-optimized contact and resume sections
 
-## Customization
+## Contact & Professional Links
 
-### Color Themes
-The site supports multiple color schemes. Edit `src/styles/global.css` to customize:
-- Default (current): Warm beige/cream theme
-- Cyan: Cool blue-green theme (commented out)
-- Green: Nature-inspired theme (commented out)
+**Bartłomiej Miłosz**  
+**Email:** [bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com)  
+**LinkedIn:** [linkedin.com/in/bartłomiej-miłosz](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/)  
+**GitHub:** [github.com/bartlomiej-milosz](https://github.com/bartlomiej-milosz)  
+**Location:** Warsaw, Poland
 
-### Typography
-Font families are configured in:
-- `src/styles/global.css` - Font imports and CSS variables
-- `tailwind.config.mjs` - Tailwind font family classes
-
-## Based On
-
-This portfolio is built upon the excellent [Dante theme](https://github.com/JustGoodUI/dante-astro-theme) by [JustGoodUI](https://justgoodui.com/), customized for my personal brand and content needs.
-
-## Contact
-
-**Bartłomiej Miłosz**
-- 📧 Email: [bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/bartłomiej-miłosz](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/)
-- 🐙 GitHub: [github.com/bartlomiejMilosz](https://github.com/bartlomiej-milosz)
-- 📍 Location: Warsaw, Poland
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+**Currently seeking:** Junior Data Analyst positions | Remote/Hybrid welcome
 
 ---
 
-*Interested in data analytics, Python programming, or architecture? Feel free to reach out or explore my projects!*
+_This portfolio demonstrates my systematic approach to technical challenges and commitment to delivering professional, user-focused solutions. Interested in discussing data analytics opportunities or technical collaboration? Let's connect!_
