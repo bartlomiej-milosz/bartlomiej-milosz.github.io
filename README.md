@@ -171,8 +171,8 @@ This portfolio is built upon the excellent [Dante theme](https://github.com/Just
 
 **Bartłomiej Miłosz**
 - 📧 Email: [bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/bartłomiej-miłosz](https://linkedin.com/in/bartłomiej-miłosz)
-- 🐙 GitHub: [github.com/bartlomiejMilosz](https://github.com/bartlomiejMilosz)
+- 💼 LinkedIn: [linkedin.com/in/bartłomiej-miłosz](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/)
+- 🐙 GitHub: [github.com/bartlomiejMilosz](https://github.com/bartlomiej-milosz)
 - 📍 Location: Warsaw, Poland
 
 ## License

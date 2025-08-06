@@ -9,7 +9,7 @@ seo:
 
 ## Interior Architect → Data Analytics Professional
 
-**Warsaw, Poland** | [bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com) | [LinkedIn](https://linkedin.com/in/bartłomiej-miłosz) | [GitHub](https://github.com/bartlomiejMilosz)
+**Warsaw, Poland** | [bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com) | [LinkedIn](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/) | [GitHub](https://github.com/bartlomiej-milosz)
 
 ---
 
@@ -85,4 +85,4 @@ seo:
 **Ready to contribute** analytical mindset and problem-solving experience to your data team while continuing to develop technical expertise.
 
 _Interested in discussing how my architectural precision can benefit your analytics initiatives?_  
-**Let's connect:** [LinkedIn](https://linkedin.com/in/bartłomiej-miłosz) | [Email](mailto:bartlomiej.milosz@gmail.com)
+**Let's connect:** [LinkedIn](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/) | [Email](mailto:bartlomiej.milosz@gmail.com)

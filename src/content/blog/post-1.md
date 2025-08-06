@@ -121,7 +121,7 @@ These architectural thinking patterns give me a unique perspective in the data a
 
 I'm currently applying these lessons to my first major analytics project: optimizing project delivery timelines for architectural firms using Python and Excel. The goal is to identify patterns that predict project delays—combining my industry knowledge with new data skills.
 
-*Interested in connecting with other career changers or discussing how domain expertise translates to analytics? Find me on [LinkedIn](https://linkedin.com/in/bartlomiej-milosz) or check out my [projects](https://bartlomiej-milosz.github.io/projects).*
+*Interested in connecting with other career changers or discussing how domain expertise translates to analytics? Find me on [LinkedIn](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/) or check out my [projects](https://bartlomiej-milosz.github.io/projects).*
 
 ---
 
