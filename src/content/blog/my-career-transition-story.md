@@ -1,5 +1,5 @@
 ---
-title: "You're Crazy to Leave Architecture for Data Analysis"
+title: "Why Leaving Architecture for Data Analytics Wasn't Crazy After All"
 excerpt: "The complete story of my career transition from interior architect to data analyst. What worked, what didn't, and why the 'right' decision emerges through research and experimentation."
 publishDate: 2025-08-10
 tags: ["career-transition", "personal-story", "data-analytics", "architecture", "career-change"]
@@ -9,52 +9,34 @@ seo:
   description: "Real story of transitioning from interior architect to data analyst. A journey of research, experimentation, and gradual discovery."
 ---
 
-When I told my colleague about my plans to transition from architecture to data analytics, his reaction was immediate: *"You're crazy to leave architecture for data analysis."*
-
-I understood his concern. After 18 months of learning programming while working as an architect, I was planning to pivot into a completely different field. From the outside, it probably did look risky.
-
-But here's the story of how I got there—and why it wasn't as crazy as it seemed.
+After four years as an interior architect, I was working on a high-end residential project in Warsaw, calculating ROI for smart home systems, when it hit me: I loved analyzing data more than designing spaces. That spark launched an 18-month journey to data analytics, turning my design skills into a foundation for solving business problems. Here's how I made it happen.
 
 ---
 
-## The Moment Everything Shifted
+## The Discovery
 
-It started during a residential project in Warsaw. My client—a tech entrepreneur—was obsessed with optimization. Instead of just wanting beautiful spaces, he wanted data-driven decisions:
+My client—a tech entrepreneur—wanted data-driven decisions for everything: smart home ROI, flooring impact on property value, market analysis for premium apartments. I spent evenings diving into data, from market trends to material cost-efficiency and realized: **I was more interested in the data than in creating the design.**
 
-*"Which smart home systems offer the best ROI for rental properties?"*  
-*"Can you analyze different flooring materials and their impact on property value?"*  
-*"What's the market analysis for $8,000/m² apartments in this district?"*
-
-Instead of being annoyed, I found myself excited. I spent evenings researching market comparisons, analyzing material specifications, and diving deep into property value optimization strategies. **I was having more fun with the research and analysis than with the actual design work.**
-
-The realization hit me while comparing dozens of kitchen cabinet configurations and their cost-efficiency ratios: **I wasn't designing spaces anymore. I was analyzing data. And I loved every minute of it.**
-
-I remember sitting at my desk with two monitors—one filled with project data, market analyses, and material comparisons, the other showing a half-finished living room design waiting for my attention. That's when it clicked: **I was more interested in the data than in creating the design.**
+I remember sitting at my desk with two monitors—one filled with project data and market analyses, the other showing a half-finished living room design waiting for my attention. That's when it clicked: I needed to explore what this interest could become.
 
 ---
 
 ## The Search Begins
 
-After four years as an interior architect, I found myself searching for something more. **I didn't know exactly what I was looking for, but I knew I needed change.**
-
-Instead of making dramatic decisions, I chose to continue my architectural practice while actively exploring what was calling to me. I believed that persistence and curiosity would eventually lead me to the right place, even if I couldn't see it clearly yet.
-
-### The Exploration Phase
+After four years as an interior architect, I found myself searching for something more. Instead of making dramatic decisions, I chose to continue my practice while exploring what was calling to me.
 
 I spent months exploring different technical paths:
 - **Java Spring development** to understand backend systems
 - **Frontend development** with JavaScript, TypeScript, and React
 - **Data structures** using Python, which opened an unexpected door
 
-Here's where things got interesting. While learning data structures in Python, I kept stumbling across articles about data science and analytics. Since I was already enjoying Python, I decided to try something simple—manipulating a CSV file with pandas.
+While learning Python, I kept stumbling across articles about data analytics. I decided to try manipulating a CSV file with Pandas.
 
 **I fell in love instantly.**
 
-Of all the technical things I'd tried, this clicked in a way nothing else had. I started realizing this could bridge what I'd been unconsciously doing as an architect (helping people make informed decisions) with what I wanted to do professionally (use technical tools to solve business problems).
+Of all the technical things I'd tried, this clicked in a way nothing else had. I realized this could bridge what I'd been unconsciously doing as an architect (helping people make informed decisions) with what I wanted to do professionally.
 
-Learning to code after years of designing spaces felt like learning a foreign language. But **every small win built confidence, and every setback taught me something valuable.**
-
-Here's something I've learned: **everything happens for a reason, even when we can't see it.** If I hadn't spent those months learning frontend development, I probably wouldn't be able to create and maintain the blog you're reading now. Skills become useful in unexpected ways.
+Learning to code felt like learning a foreign language, but **every small win built confidence, and every setback taught me something valuable.** If I hadn't spent those months learning frontend development, I probably wouldn't be able to create and maintain the blog you're reading now. Skills become useful in unexpected ways.
 
 ---
 
@@ -91,10 +73,10 @@ I wasn't changing careers—**I was applying the same core skills to different p
 
 ## Where I Am Now
 
-Today, I'm actively interviewing for junior data analyst positions while completing my CS studies. The transition isn't complete, but the momentum is clear.
+Today, I'm actively interviewing for junior data analyst positions while completing my CS studies.
 
 **What's changed:**
-- **Technical skills:** Comfortable with Python, SQL, and growing expertise in data analysis
+- **Technical skills:** Comfortable with Python, SQL, and data analysis
 - **Confidence:** I can explain how architecture experience transfers to data work
 - **Portfolio:** Building projects that showcase analytics capabilities
 
@@ -104,31 +86,25 @@ Today, I'm actively interviewing for junior data analyst positions while complet
 
 ---
 
-## What I Wish I'd Known Earlier
+## Key Lessons for Career Changers
 
-**Research and experimentation beat waiting for clarity.** The clarity came through doing, building, and constantly learning—not through thinking about it. Career transitions are gradual discoveries, not binary switches.
+If you're considering a similar transition, here's what I wish I'd known:
 
-**Your existing skills are your foundation.** Don't underestimate transferable value. I can understand business problems better than many junior analysts because of my client experience.
+1. **Research and experimentation beat waiting for clarity.** The clarity came through doing, building, and constantly learning—not through thinking about it. Career transitions are gradual discoveries, not binary switches.
 
-**Technical skills can be learned faster than you think.** Business acumen and communication skills take years to develop—and you might already have them.
+2. **Your existing skills are your foundation.** Don't underestimate transferable value. I can understand business problems better than many junior analysts because of my client experience.
 
----
+3. **The market needs people who can bridge technical and business perspectives.** That's exactly what career changers offer.
 
-## For Other Career Changers
+4. **Technical skills can be learned faster than you think.** Business acumen and communication skills take years to develop—and you might already have them.
 
-If you're considering a similar transition:
-
-**The market needs people who can bridge technical and business perspectives.** That's exactly what career changers offer.
-
-**It's okay for transitions to take time.** Mine has been ongoing for over a year, and I'm still building. That's normal and valuable.
-
-**Focus on real problems, not just technical tools.** Find actual business problems to solve with your growing skills.
+5. **Allow transitions to take time.** Mine has been ongoing for over a year, and I'm still building. Focus on solving real business problems, not just learning tools.
 
 ---
 
 ## What's Next?
 
-I'm seeking junior data analyst positions where I can apply this combination of architectural thinking, growing technical skills, and business communication experience.
+I’m seeking junior data analyst roles in Warsaw or remote positions where I can leverage Python, SQL, and my business communication skills.
 
 **Am I done transitioning?** Absolutely not. I'm still learning, still building, still researching. **But that's the point—improvement is a continuous process, not a destination.**
 
