@@ -13,7 +13,7 @@ seo:
 
 ## Ready to Discuss Your Data Challenges?
 
-I'm a junior data analyst with **4+ years of systematic problem-solving experience** from architecture. Currently available for data analytics roles, analytical projects, and career transition conversations.
+I'm a Computer Science Student at PJATK Warsaw with **4+ years of systematic problem-solving experience** from architecture. Currently available for data analytics roles, analytical projects, and career transition conversations.
 
 ### Let's Connect
 
@@ -33,4 +33,4 @@ I'm a junior data analyst with **4+ years of systematic problem-solving experien
 
 **Response time:** Within 24 hours on weekdays. For urgent opportunities, please mention in your subject line.
 
-Ready to see how architectural precision can improve your data challenges? I'd love to hear from you.
+*Ready to see how architectural precision can improve your data challenges? I'd love to hear from you.*
