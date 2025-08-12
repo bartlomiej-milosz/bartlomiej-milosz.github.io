@@ -18,7 +18,7 @@ I'm a junior data analyst with **4+ years of systematic problem-solving experien
 ### Let's Connect
 
 **Email:** [bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com)  
-**LinkedIn:** [Professional networking and career discussions](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/)  
+**LinkedIn:** [Professional networking and career discussions](https://linkedin.com/in/bartlomiej-milosz)  
 **GitHub:** [Technical projects and code samples](https://github.com/bartlomiej-milosz)  
 **Twitter/X:** [Industry insights and learning journey](https://x.com/MiOmiej)
 

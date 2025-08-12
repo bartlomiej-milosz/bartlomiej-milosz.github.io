@@ -9,23 +9,23 @@ seo:
   description: "Real story of transitioning from interior architect to data analyst. A journey of research, experimentation, and gradual discovery."
 ---
 
-After four years as an interior architect, I was working on a high-end residential project in Warsaw, calculating ROI for smart home systems, when it hit me: I loved analyzing data more than designing spaces. That spark launched an 18-month journey to data analytics, turning my design skills into a foundation for solving business problems. Here's how I made it happen.
+After four years as an interior architect, I was working on a **€500K residential project in Warsaw** when my client kept asking for 'more data'—space utilization analyses, furniture cost comparisons, lighting efficiency studies, and material durability research. As I built spreadsheets comparing flooring options, analyzing room flow patterns, and calculating budget allocations across design elements, it hit me: **I loved analyzing data more than designing spaces.** That spark launched an 18-month journey to data analytics, turning my architecture skills into a foundation for solving business problems. Here’s how I made it happen.
 
 ---
 
 ## The Discovery
 
-My client—a tech entrepreneur—wanted data-driven decisions for everything: smart home ROI, flooring impact on property value, market analysis for premium apartments. I spent evenings diving into data, from market trends to material cost-efficiency and realized: **I was more interested in the data than in creating the design.**
+My client wanted data-driven decisions for every aspect of the project: from comparing flooring options and their impact on property value to analyzing room flow patterns and budget allocations. I spent evenings diving into spreadsheets, crunching numbers on material costs, space efficiency, and design trade-offs—and realized: **I was more interested in the data insights than in finalizing the design itself.**
 
-I remember sitting at my desk with two monitors—one filled with project data and market analyses, the other showing a half-finished living room design waiting for my attention. That's when it clicked: I needed to explore what this interest could become.
+I remember sitting at my desk with two monitors—one filled with project spreadsheets and analyses, the other showing a half-finished living room layout waiting for my attention. That’s when it clicked: I wasn’t just designing interiors anymore; I was doing data analysis. And I loved it. This led me to ask: **What if I could help not just individual families optimize their investments, but assist businesses in optimizing strategies and understanding their customers?** The answer pointed straight to data analytics.
 
 ---
 
 ## The Search Begins
 
-After four years as an interior architect, I found myself searching for something more. Instead of making dramatic decisions, I chose to continue my practice while exploring what was calling to me.
+I found myself searching for something more fulfilling, choosing to continue my architecture practice while exploring new paths that sparked my curiosity.
 
-I spent months exploring different technical paths:
+I spent months experimenting with different technical areas:
 - **Java Spring development** to understand backend systems
 - **Frontend development** with JavaScript, TypeScript, and React
 - **Data structures** using Python, which opened an unexpected door
@@ -112,6 +112,8 @@ The best career decisions aren't the ones that feel obviously right from the sta
 
 ---
 
-*Are you considering a career transition? I'd love to connect and share more specific advice. Find me on [LinkedIn](https://www.linkedin.com/in/bartłomiej-miłosz-76015b1ba/) or check out my [portfolio projects](https://bartlomiej-milosz.github.io/projects).*
+*Are you considering a career transition? I'd love to connect and share more specific advice. Find me on [LinkedIn](https://linkedin.com/in/bartlomiej-milosz) or check out my [portfolio projects](https://bartlomiej-milosz.github.io/projects).*
 
-*What transition are you researching right now? What small step could you take this week to move closer to where you want to be?*
+*What transition are you researching right now?*
+
+*Drop me a message - I respond within 24h and love helping fellow career changers*

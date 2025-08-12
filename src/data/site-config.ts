@@ -92,7 +92,7 @@ const siteConfig: SiteConfig = {
 	socialLinks: [
 		{
 			text: "Linkedin",
-			href: "https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/",
+			href: "https://linkedin.com/in/bartlomiej-milosz",
 		},
 		{
 			text: "Github",

@@ -71,11 +71,11 @@ Combining **4+ years of client consulting experience** with growing technical ex
 
 ## Key Features Implemented
 
-- **Professional Portfolio Sections** - Projects, resume, about, contact  
-- **Responsive Design** - Mobile-first approach across all devices  
-- **Theme System** - Dark/light mode with smooth transitions  
-- **SEO Optimization** - Meta tags, structured data, performance  
-- **Content Management** - Type-safe markdown collections  
+- **Professional Portfolio Sections** - Projects, resume, about, contact
+- **Responsive Design** - Mobile-first approach across all devices
+- **Theme System** - Dark/light mode with smooth transitions
+- **SEO Optimization** - Meta tags, structured data, performance
+- **Content Management** - Type-safe markdown collections
 - **Performance Focused** - Optimized loading and Core Web Vitals
 
 ## Project Highlights
@@ -101,10 +101,10 @@ Combining **4+ years of client consulting experience** with growing technical ex
 
 ## Contact & Professional Links
 
-**Bartłomiej Miłosz**  
-**Email:** [bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com)  
-**LinkedIn:** [linkedin.com/in/bartłomiej-miłosz](https://www.linkedin.com/in/bart%C5%82omiej-mi%C5%82osz-76015b1ba/)  
-**GitHub:** [github.com/bartlomiej-milosz](https://github.com/bartlomiej-milosz)  
+**Bartłomiej Miłosz**
+**Email:** [bartlomiej.milosz@gmail.com](mailto:bartlomiej.milosz@gmail.com)
+**LinkedIn:** [linkedin.com/in/bartłomiej-miłosz](https://linkedin.com/in/bartlomiej-milosz)
+**GitHub:** [github.com/bartlomiej-milosz](https://github.com/bartlomiej-milosz)
 **Location:** Warsaw, Poland
 
 **Currently seeking:** Junior Data Analyst positions | Remote/Hybrid welcome
