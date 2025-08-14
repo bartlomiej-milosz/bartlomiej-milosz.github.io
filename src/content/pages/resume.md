@@ -14,9 +14,10 @@ Combining **4+ years of client consulting experience** with growing technical ex
 ### Key Highlights
 
 - **4+ years client consulting experience** with proven stakeholder communication abilities
-- **15+ complex projects coordinated** across multiple teams and strict deadlines
+- **€2M+ combined project value** coordinated across multiple teams and strict deadlines
+- **15+ complex projects delivered** on time and within budget requirements
 - **Computer Science studies at PJATK** Warsaw (Poland's #3 CS program for graduate earnings)
-- **Technical portfolio** including Python data analysis and Java development projects
+- **Growing technical portfolio** including Python data analysis and Java development projects
 
 **Currently Available For:** Junior Data Analyst positions | Warsaw or Remote | Immediate start
 
