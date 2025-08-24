@@ -44,7 +44,7 @@ const siteConfig: SiteConfig = {
 	title: "Bartłomiej Miłosz",
 	subtitle: "Architect → Analytics | Better Decisions Through Data",
 	description:
-		"Portfolio of Bartłomiej Miłosz - Architect transitioning to data analytics. Combining client consulting experience with growing technical skills in Python and Excel. Currently studying Computer Science at PJATK.",
+		"Portfolio of Bartłomiej Miłosz - Architect transitioning to data analytics. Combining client consulting experience with growing technical skills in Python, SQL, and Excel. Currently studying Computer Science at PJATK.",
 	image: {
 		src: "/hero.webp",
 		alt: "Bartłomiej Miłosz - From Architecture to Analytics Portfolio",
@@ -105,11 +105,11 @@ const siteConfig: SiteConfig = {
 	],
 	hero: {
 		title: "From Living Solutions to Data Insights",
-		text: `I've spent **4+ years helping families** make their biggest investment decisions—designing homes that work for their lives.
+		text: `I've spent 4+ years helping families make their **biggest investment decisions**—designing homes that work for their lives.
 
-Now I'm applying that same analytical approach to help businesses make sense of their data.
+Now I'm applying that same **analytical approach** to help businesses make sense of their data.
 
-Architecture taught me how to **break down complex problems**, communicate clearly with stakeholders, and turn requirements into solutions. I'm building on this foundation with **Computer Science studies at PJATK** and hands-on experience in Python and Excel.
+Architecture taught me how to break down complex problems, communicate clearly with stakeholders, and turn requirements into solutions. I'm building on this foundation with **Computer Science studies at PJATK** and hands-on experience in Python and Excel.
 
 **Ready to bring systematic thinking to your data challenges.**`,
 		image: {
@@ -121,10 +121,10 @@ Architecture taught me how to **break down complex problems**, communicate clear
 				text: "Get in Touch",
 				href: "/contact",
 			},
-			{
-				text: "View Resume",
-				href: "/resume",
-			},
+			// {
+			// 	text: "View Resume",
+			// 	href: "/resume",
+			// },
 		],
 	},
 	subscribe: {

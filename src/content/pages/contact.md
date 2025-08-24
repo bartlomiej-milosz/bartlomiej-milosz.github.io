@@ -13,7 +13,7 @@ seo:
 
 ## Ready to Discuss Your Data Challenges?
 
-I'm a Computer Science Student at PJATK Warsaw with **4+ years of systematic problem-solving experience** from architecture. Currently available for data analytics roles, analytical projects, and career transition conversations.
+I'm a Computer Science Student at PJATK Warsaw with 4+ years helping families make their biggest **investment decisions** through architectural design.
 
 ### Let's Connect
 
@@ -25,12 +25,11 @@ I'm a Computer Science Student at PJATK Warsaw with **4+ years of systematic pro
 ### Currently Available For
 
 - **Junior data analyst positions** (Warsaw or remote)
-- **Analytical consulting projects**  
+- **Analytical consulting projects**
 - **Career transition insights** for fellow professionals
-- **Speaking opportunities** about architectural thinking in analytics
 
 ---
 
 **Response time:** Within 24 hours on weekdays. For urgent opportunities, please mention in your subject line.
 
-*Ready to see how architectural precision can improve your data challenges? I'd love to hear from you.*
+_Looking forward to connecting with fellow professionals and exploring how my analytical background can contribute to your team._

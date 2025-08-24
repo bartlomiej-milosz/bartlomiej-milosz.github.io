@@ -16,39 +16,30 @@ For four years, I helped families make their biggest investment decisions—desi
 
 ## The Realization
 
-The turning point came during an interior design project when my client kept asking for "more data"—space utilization analyses, furniture cost comparisons, lighting efficiency studies, material durability research.
+The turning point came when I realized I was spending as much time in Excel as I was in design software.
 
-As I built spreadsheets comparing flooring options, analyzing room flow patterns, and calculating budget allocations across design elements, I realized: **I wasn't just designing interiors anymore. I was doing data analysis.** And I loved it.
+Detailed budget spreadsheets tracking hundreds of cost variables—every fixture, system, and material component. Room flow analyses measuring traffic patterns. Material comparison matrices weighing durability, cost, and aesthetics across dozens of options.
 
-That's when I asked myself: *What if I could help not just individual families optimize their investment, but help businesses optimize their strategies and understand their customers?*
+I stepped back and thought: **I'm not just designing anymore—I'm doing data analysis.** And I loved it.
 
-The answer led me to data analytics.
+That's when I asked myself: _What if I could help not just families optimize their biggest investment, but help businesses optimize their strategies?_
 
 ## What I Bring to Analytics
 
-Architecture gave me something valuable for data analytics: **real experience translating complex technical concepts into actionable insights for people making significant financial decisions.**
+Architecture gave me **real experience translating complex technical concepts into actionable insights for people making significant financial decisions.** I've guided clients through budget trade-offs, explained design implications in business terms, and coordinated projects where clear communication meant the difference between success and costly mistakes.
 
-I've guided clients through budget trade-offs, explained design implications in business terms, and coordinated projects where clear communication meant the difference between success and costly mistakes.
+This background provides proven stakeholder communication skills, experience with high-stakes decision-making, and a systematic approach to complex problem-solving under real deadlines.
 
-**This background provides:**
-- Proven stakeholder communication skills  
-- Experience with high-stakes decision-making
-- Systematic approach to complex problem-solving
-- Ability to work under pressure with real deadlines
+## Technical Foundation
 
-## Building Technical Skills
+**Current toolkit:**
 
-**Currently expanding my toolkit:**
-- **Computer Science** at PJATK Warsaw 
-- **Python & Excel** for data analysis and business intelligence
+- **Computer Science** at PJATK Warsaw
+- **Python, SQL, and Excel** for data analysis and business intelligence
 - **Hands-on projects** applying architectural project management to data problems
 
-## My Approach
-
-I bring architectural precision to data problems—systematic, detail-oriented analysis combined with the ability to communicate insights clearly to stakeholders who need to understand not just what the data says, but **what it means for their business.**
-
-## Looking Forward
+## Next Steps
 
 I'm seeking opportunities to apply this unique combination of analytical experience and growing technical skills to help organizations make better decisions about their customers, products, and growth strategies.
 
-**Ready to see how architectural thinking can improve your data challenges?** [Let's connect](/contact) or explore my [project portfolio](/projects).
+**Looking forward to connecting with organizations ready to explore how analytical precision can contribute to their data challenges.** [Let's connect](/contact) or explore my [project portfolio](/projects).
