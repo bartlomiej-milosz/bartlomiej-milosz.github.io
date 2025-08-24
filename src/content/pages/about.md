@@ -42,4 +42,4 @@ This background provides proven stakeholder communication skills, experience wit
 
 I'm seeking opportunities to apply this unique combination of analytical experience and growing technical skills to help organizations make better decisions about their customers, products, and growth strategies.
 
-**Looking forward to connecting with organizations ready to explore how analytical precision can contribute to their data challenges.** [Let's connect](/contact) or explore my [project portfolio](/projects).
+**Looking forward to connecting with organizations where my analytical experience and fresh perspective can add value to their data team.** [Let's connect](/contact) or explore my [project portfolio](/projects).

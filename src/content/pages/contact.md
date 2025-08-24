@@ -25,7 +25,7 @@ I'm a Computer Science Student at PJATK Warsaw with 4+ years helping families ma
 ### Currently Available For
 
 - **Junior data analyst positions** (Warsaw or remote)
-- **Analytical consulting projects**
+- **Data analytics internships or project work**
 - **Career transition insights** for fellow professionals
 
 ---

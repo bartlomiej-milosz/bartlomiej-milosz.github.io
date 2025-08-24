@@ -6,43 +6,43 @@ import siteConfig from "../data/site-config";
 import "../styles/global.css";
 
 export type Props = {
-	title?: string;
-	description?: string;
-	image?: { src: string; alt?: string };
-	pageType?: "website" | "article";
-	keywords?: string[];
-	noIndex?: boolean;
+  title?: string;
+  description?: string;
+  image?: { src: string; alt?: string };
+  pageType?: "website" | "article";
+  keywords?: string[];
+  noIndex?: boolean;
 };
 
 const {
-	description = "",
-	image = siteConfig.image,
-	pageType = "website",
-	keywords = [],
-	noIndex = false,
+  description = "",
+  image = siteConfig.image,
+  pageType = "website",
+  keywords = [],
+  noIndex = false,
 } = Astro.props;
 
 const title = [Astro.props.title, siteConfig.title].filter(Boolean).join(" | ");
 const resolvedImage = image?.src
-	? {
-			src: new URL(image.src, Astro.site).toString(),
-			alt: image.alt,
-		}
-	: undefined;
+  ? {
+      src: new URL(image.src, Astro.site).toString(),
+      alt: image.alt,
+    }
+  : undefined;
 const canonicalURL = new URL(Astro.request.url, Astro.site);
 
 // Focused, natural keywords
 const defaultKeywords = [
-	"Bartłomiej Miłosz",
-	"data analyst Warsaw",
-	"architect data analytics",
-	"Python data analysis",
-	"Excel business intelligence",
-	"career transition Poland",
-	"PJATK computer science",
-	"interior architect analyst",
-	"business consulting analytics",
-	"PropTech data specialist",
+  "Bartłomiej Miłosz",
+  "data analyst Warsaw",
+  "architect data analytics",
+  "Python data analysis",
+  "Excel business intelligence",
+  "career transition Poland",
+  "PJATK computer science",
+  "interior architect analyst",
+  "business consulting analytics",
+  "PropTech data specialist",
 ];
 
 const allKeywords = [...defaultKeywords, ...keywords].join(", ");
@@ -51,97 +51,97 @@ const allKeywords = [...defaultKeywords, ...keywords].join(", ");
  * Proper canonical URL formatting
  */
 function formatCanonicalURL(url: string | URL) {
-	let path = url.toString();
-	const hasQueryParams = path.includes("?");
-	// Remove trailing slash if query params exist, add if not
-	return path.replace(/\/?$/, hasQueryParams ? "" : "/");
+  let path = url.toString();
+  const hasQueryParams = path.includes("?");
+  // Remove trailing slash if query params exist, add if not
+  return path.replace(/\/?$/, hasQueryParams ? "" : "/");
 }
 
 // Clean structured data
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "Person",
-	name: "Bartłomiej Miłosz",
-	jobTitle: "Data Analyst | Interior Architect",
-	description:
-		description ||
-		"Data analyst combining 4+ years of client consulting experience with technical expertise in Python and Excel. Currently studying Computer Science at PJATK Warsaw.",
-	url: canonicalURL.toString(),
-	alumniOf: [
-		{
-			"@type": "EducationalOrganization",
-			name: "PJATK Warsaw",
-			description: "Computer Science studies",
-			url: "https://pja.edu.pl",
-		},
-		{
-			"@type": "EducationalOrganization",
-			name: "Rzeszów University of Technology",
-			description: "Master of Architecture",
-		},
-	],
-	knowsAbout: [
-		"Data Analysis",
-		"Python Programming",
-		"Excel",
-		"Business Intelligence",
-		"Client Consulting",
-		"Project Management",
-		"Interior Architecture",
-		"Requirements Analysis",
-	],
-	sameAs: [
-		"https://linkedin.com/in/bartlomiej-milosz",
-		"https://github.com/bartlomiej-milosz",
-		"https://x.com/MiOmiej",
-	],
-	address: {
-		"@type": "PostalAddress",
-		addressLocality: "Warsaw",
-		addressRegion: "Mazovia",
-		addressCountry: "Poland",
-	},
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Bartłomiej Miłosz",
+  jobTitle: "Data Analyst | Interior Architect",
+  description:
+    description ||
+    "Data analyst combining 4+ years of client consulting experience with technical expertise in Python and Excel. Currently studying Computer Science at PJATK Warsaw.",
+  url: canonicalURL.toString(),
+  alumniOf: [
+    {
+      "@type": "EducationalOrganization",
+      name: "PJATK Warsaw",
+      description: "Computer Science studies",
+      url: "https://pja.edu.pl",
+    },
+    {
+      "@type": "EducationalOrganization",
+      name: "Rzeszów University of Technology",
+      description: "Master of Architecture",
+    },
+  ],
+  knowsAbout: [
+    "Data Analysis",
+    "Python Programming",
+    "Excel",
+    "Business Intelligence",
+    "Client Consulting",
+    "Project Management",
+    "Interior Architecture",
+    "Requirements Analysis",
+  ],
+  sameAs: [
+    "https://linkedin.com/in/bartlomiej-milosz",
+    "https://github.com/bartlomiej-milosz",
+    "https://x.com/MiOmiej",
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Warsaw",
+    addressRegion: "Mazovia",
+    addressCountry: "Poland",
+  },
 };
 
 // Simplified page-specific structured data
 const getPageSpecificStructuredData = () => {
-	const pathname = Astro.url.pathname;
+  const pathname = Astro.url.pathname;
 
-	if (pathname.includes("/about")) {
-		return {
-			"@context": "https://schema.org",
-			"@type": "AboutPage",
-			name: "About Bartłomiej Miłosz",
-			description:
-				"Learn about my transition from architecture to data analytics",
-			url: canonicalURL.toString(),
-			mainEntity: structuredData,
-		};
-	}
+  if (pathname.includes("/about")) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      name: "About Bartłomiej Miłosz",
+      description:
+        "Learn about my transition from architecture to data analytics",
+      url: canonicalURL.toString(),
+      mainEntity: structuredData,
+    };
+  }
 
-	if (pathname.includes("/resume")) {
-		return {
-			"@context": "https://schema.org",
-			"@type": "WebPage",
-			name: "Bartłomiej Miłosz - Resume",
-			description:
-				"Professional resume showcasing analytical and technical skills",
-			url: canonicalURL.toString(),
-			mainEntity: structuredData,
-		};
-	}
+  if (pathname.includes("/resume")) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Bartłomiej Miłosz - Resume",
+      description:
+        "Professional resume showcasing analytical and technical skills",
+      url: canonicalURL.toString(),
+      mainEntity: structuredData,
+    };
+  }
 
-	if (pathname.includes("/projects")) {
-		return {
-			"@context": "https://schema.org",
-			"@type": "CollectionPage",
-			name: "Projects Portfolio - Bartłomiej Miłosz",
-			description: "Data analytics and software development projects",
-			url: canonicalURL.toString(),
-		};
-	}
+  if (pathname.includes("/projects")) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Projects Portfolio - Bartłomiej Miłosz",
+      description: "Data analytics and software development projects",
+      url: canonicalURL.toString(),
+    };
+  }
 
-	return structuredData;
+  return structuredData;
 };
 ---
 
@@ -199,18 +199,28 @@ const getPageSpecificStructuredData = () => {
 />
 
 <!-- Favicons -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="/android-chrome-192x192.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="512x512"
+  href="/android-chrome-512x512.png"
+/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
 
 <!-- Theme -->
-<meta name="theme-color" content="#171717">
-<meta name="msapplication-TileColor" content="#171717">
+<meta name="theme-color" content="#171717" />
+<meta name="msapplication-TileColor" content="#171717" />
 <meta name="color-scheme" content="light dark" />
 
 <!-- Technical SEO -->
