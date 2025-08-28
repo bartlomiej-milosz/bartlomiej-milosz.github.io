@@ -1,0 +1,50 @@
+---
+import '@/styles/global.css'
+import { themeConfig } from '@/config'
+import ThemeToggle from '@/components/ui/ThemeToggle.astro'
+---
+
+<header>
+  <nav>
+    <div>
+      <a href="/">home</a>
+      <span>/</span>
+      <a href="/contact">contact</a>
+    </div>
+    <ThemeToggle />
+  </nav>
+</header>
+<style>
+  header {
+    margin: 0;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav div span {
+    margin: 0 0.375rem
+  }
+  header a {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--serif);
+    color: var(--text-primary);
+    text-decoration: none;
+
+    display: inline-block;
+  }
+  header a {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--text-tertiary);
+    transition: text-decoration-color 0.2s ease-out;
+    font-size: var(--font-size-m);
+    opacity: 1 !important;
+  }
+  header a:hover {
+    color: var(--text-primary);
+    text-decoration-color: var(--text-primary);
+  }
+</style>

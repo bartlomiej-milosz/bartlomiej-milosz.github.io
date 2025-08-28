@@ -1,0 +1,212 @@
+---
+import '@/styles/global.css'
+import FormattedDate from '@/components/widgets/FormattedDate.astro'
+import type { CollectionEntry } from 'astro:content'
+import { themeConfig } from '@/config'
+
+interface Props {
+  items: CollectionEntry<'posts'>[] | CollectionEntry<'projects'>[]
+  showReadMore?: boolean
+  totalItems?: number
+  showTitle?: boolean
+  title?: string
+  readMoreLink?: string
+  readMoreText?: string
+}
+
+const {
+  items,
+  showReadMore = false,
+  totalItems,
+  showTitle = false,
+  title = 'Content',
+  readMoreLink = '#',
+  readMoreText = 'Read more'
+} = Astro.props as Props
+---
+
+{
+  showTitle && (
+    <div class="section-title">
+      <h2>{title}</h2>
+    </div>
+  )
+}
+
+<ul>
+  {
+    items.map((item) => (
+      <li>
+        <a href={`/${item.id}/`}>
+          <div class={`content-item ${!themeConfig.date.dateOnRight ? 'date-left' : ''}`}>
+            {!themeConfig.date.dateOnRight && (
+              <p class="date font-features">
+                <FormattedDate date={item.data.pubDate} context="list" />
+              </p>
+            )}
+            <p class="title">{item.data.title}</p>
+            {themeConfig.date.dateOnRight && (
+              <div
+                class={themeConfig.general.postListDottedDivider ? 'dotted-divider' : 'divider'}
+              />
+            )}
+            {themeConfig.date.dateOnRight && (
+              <p class="date font-features">
+                <FormattedDate date={item.data.pubDate} context="list" />
+              </p>
+            )}
+          </div>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+{
+  showReadMore && (
+    <div class="read-more">
+      <a href={readMoreLink}>{readMoreText}</a>
+    </div>
+  )
+}
+
+<style>
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  a {
+    color: var(--text-primary);
+    display: block;
+    text-decoration: none;
+    transition: opacity 0.15s ease-out;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    ul:hover a {
+      opacity: 0.4;
+    }
+
+    ul:hover a:hover {
+      opacity: 1;
+    }
+
+    ul:hover a:hover .divider {
+      background-color: var(--text-tertiary);
+      opacity: 0.75;
+    }
+    ul:hover a:hover .dotted-divider {
+      color: var(--text-secondary);
+    }
+    ul:hover a:hover .date {
+      color: var(--text-secondary);
+      opacity: 1;
+    }
+  }
+
+  .content-item {
+    height: var(--item-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-m);
+  }
+
+  .content-item.date-left {
+    justify-content: flex-start;
+  }
+
+  .content-item.date-left .title {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .content-item.date-left .date {
+    margin-right: var(--space-m);
+  }
+
+   .section-title {
+    margin-bottom: var(--space-l);
+  }
+
+  .section-title h2 {
+    font-size: var(--font-size-l) !important;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.75;
+    margin: 0;
+    color: var(--text-primary);
+  }
+
+  .title {
+    margin: 0;
+    flex-shrink: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .date {
+    margin: 0;
+    color: var(--text-secondary);
+    opacity: 0.75;
+    letter-spacing: var(--spacing-s);
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .divider {
+    flex: 1 1 auto;
+    min-width: 3rem;
+    margin: 0 var(--space-xs);
+    height: var(--border-thin);
+    background-color: var(--border);
+  }
+
+  .placeholder {
+    margin: 10rem;
+  }
+
+  .dotted-divider {
+    flex: 1 1 3rem;
+    min-width: 3rem;
+    max-width: 100%;
+    text-align: end;
+    letter-spacing: 5px;
+    height: 1.675rem;
+    overflow: hidden;
+    color: var(--text-tertiary);
+    opacity: 0.75;
+  }
+
+  .dotted-divider::after {
+    content: '·····························································································································································';
+    pointer-events: none;
+  }
+
+  /* Simple read more - matches markdown links */
+  .read-more {
+    margin-top: var(--space-m);
+    text-align: right;
+    font-family: var(--serif);
+  }
+
+  .read-more a {
+    color: var(--text-primary); /* black text like markdown links */
+    text-decoration: underline;
+    text-decoration-color: var(--text-tertiary); /* gray underline */
+    transition: text-decoration-color 0.2s ease-out;
+    font-size: var(--font-size-m);
+    opacity: 1 !important; /* Override ul hover effect */
+  }
+
+  .read-more a:hover {
+    color: var(--text-primary); /* stay black */
+    text-decoration-color: var(--text-primary); /* underline turns black */
+  }
+</style>

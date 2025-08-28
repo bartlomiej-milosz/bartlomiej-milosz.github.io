@@ -1,0 +1,29 @@
+---
+import ContentList from '@/components/widgets/ContentList.astro'
+import type { PostListProps } from '@/types'
+
+interface Props extends PostListProps {
+  showReadMore?: boolean
+  totalPosts?: number
+  showTitle?: boolean
+  title?: string
+}
+
+const {
+  posts,
+  showReadMore = false,
+  totalPosts,
+  showTitle = false,
+  title = 'Blog'
+} = Astro.props as Props
+---
+
+<ContentList
+  items={posts}
+  showReadMore={showReadMore}
+  totalItems={totalPosts}
+  showTitle={showTitle}
+  title={title}
+  readMoreLink="/blog"
+  readMoreText="Read more"
+/>

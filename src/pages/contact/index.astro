@@ -1,0 +1,11 @@
+---
+import IndexLayout from '@/layouts/IndexLayout.astro'
+import { themeConfig } from '@/config'
+import Contact from '@/components/widgets/Contact.astro'
+---
+
+<IndexLayout title={`All Posts - ${themeConfig.site.title}`} description="All blog posts">
+  <main>
+    <Contact />
+  </main>
+</IndexLayout>

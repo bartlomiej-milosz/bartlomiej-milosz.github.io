@@ -1,0 +1,30 @@
+---
+import ContentList from '@/components/widgets/ContentList.astro'
+import type { CollectionEntry } from 'astro:content'
+
+interface Props {
+  projects: CollectionEntry<'projects'>[]
+  showReadMore?: boolean
+  totalProjects?: number
+  showTitle?: boolean
+  title?: string
+}
+
+const {
+  projects,
+  showReadMore = false,
+  totalProjects,
+  showTitle = false,
+  title = 'Projects'
+} = Astro.props as Props
+---
+
+<ContentList
+  items={projects}
+  showReadMore={showReadMore}
+  totalItems={totalProjects}
+  showTitle={showTitle}
+  title={title}
+  readMoreLink="/projects"
+  readMoreText="View all projects"
+/>

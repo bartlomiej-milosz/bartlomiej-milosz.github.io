@@ -1,0 +1,63 @@
+---
+import IndexLayout from '@/layouts/IndexLayout.astro'
+import About from '@/components/widgets/About.astro'
+import PostList from '@/components/widgets/PostList.astro'
+import ProjectList from '@/components/widgets/ProjectList.astro'
+import { themeConfig } from '@/config'
+import {
+  getPinnedPosts,
+  getRecentPosts,
+  getSortedFilteredPosts,
+  getFeaturedProjects,
+  getRecentProjects,
+  getSortedFilteredProjects
+} from '@/utils/draft'
+
+// Get pinned posts for homepage
+const pinnedPosts = await getPinnedPosts()
+
+// Fallback to recent posts if no pinned posts exist
+const FALLBACK_POST_LIMIT = 5
+const fallbackPosts = pinnedPosts.length === 0 ? await getRecentPosts(FALLBACK_POST_LIMIT) : []
+
+// Get total count for the "read more" functionality
+const allPosts = await getSortedFilteredPosts()
+
+const displayPosts = pinnedPosts.length > 0 ? pinnedPosts : fallbackPosts
+const hasMorePosts = allPosts.length > displayPosts.length
+
+// Get featured projects for homepage
+const featuredProjects = await getFeaturedProjects()
+
+// Fallback to recent projects if no featured projects exist
+const FALLBACK_PROJECT_LIMIT = 3
+const fallbackProjects =
+  featuredProjects.length === 0 ? await getRecentProjects(FALLBACK_PROJECT_LIMIT) : []
+
+// Get total count for projects
+const allProjects = await getSortedFilteredProjects()
+
+const displayProjects = featuredProjects.length > 0 ? featuredProjects : fallbackProjects
+const hasMoreProjects = allProjects.length > displayProjects.length
+---
+
+<IndexLayout title={themeConfig.site.title} description={themeConfig.site.description}>
+  <About />
+  <main>
+    <PostList
+      posts={displayPosts}
+      showReadMore={hasMorePosts}
+      totalPosts={allPosts.length}
+      showTitle={true}
+      title="Blog"
+    />
+    <div style="margin-top: var(--space-2xl);"></div>
+    <ProjectList
+      projects={displayProjects}
+      showReadMore={hasMoreProjects}
+      totalProjects={allProjects.length}
+      showTitle={true}
+      title="Projects"
+    />
+  </main>
+</IndexLayout>

@@ -1,0 +1,66 @@
+---
+import { themeConfig } from '@/config'
+import { socials } from '@/socials'
+const today = new Date()
+
+const linkedin = socials.find(social => social.name === 'LinkedIn')
+const github = socials.find(social => social.name === 'GitHub')
+const twitter = socials.find(social => social.name === 'Twitter')
+---
+
+<footer>
+  <div class="footer-content">
+    <div class="copyright">
+      <span class="date">
+        &copy;
+        {today.getFullYear()}
+      </span>
+      {themeConfig.site.author}
+    </div>
+    <div class="socials">
+      <a href={linkedin?.href}>Linkedin</a>
+      <span>|</span>
+      <a href={github?.href}>GitHub</a>
+      <span>|</span>
+      <a href={twitter?.href}>Twitter/X</a>
+    </div>
+  </div>
+</footer>
+<style>
+  footer {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-light);
+    line-height: 1.75;
+    color: var(--text-secondary);
+    opacity: 0.75;
+    margin-top: 4rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .copyright,
+  .socials {
+    white-space: nowrap;
+  }
+
+  .copyright .date {
+    opacity: 1;
+  }
+
+  footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+  }
+
+  footer a:hover {
+    color: var(--text-primary);
+  }
+</style>

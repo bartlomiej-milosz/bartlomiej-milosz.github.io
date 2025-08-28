@@ -1,0 +1,89 @@
+---
+// Import the global.css file here so that it is included on
+// all pages through the use of the <BaseHead /> component.
+import { themeConfig } from '@/config'
+import type { BaseHeadProps } from '@/types/component.types'
+import 'katex/dist/katex.min.css'
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+
+const { title, description, ogImage } = Astro.props as BaseHeadProps
+// Updated OG image - use your own branded image
+const imageUrl = ogImage ? new URL(ogImage, Astro.url) : new URL('/og/bartlomiej-milosz-og.png', Astro.url)
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<!-- Font Preloading - Inter for clean, professional typography -->
+<link rel="preload" href="/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+<link
+  rel="preload"
+  href="/fonts/Besley-Italic.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<!-- SEO & Crawling -->
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title={themeConfig.site.title}
+  href={new URL('rss.xml', Astro.site)}
+/>
+<meta name="generator" content={Astro.generator} />
+
+<!-- Additional SEO Meta -->
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Bartłomiej Miłosz" />
+<meta name="keywords" content="data analyst, business intelligence, SQL, Python, Excel, architecture, stakeholder communication, Warsaw, Poland" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>
+  {title || themeConfig.site.title}
+</title>
+<meta name="title" content={title || themeConfig.site.title} />
+<meta name="description" content={description || themeConfig.site.description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title || themeConfig.site.title} />
+<meta property="og:description" content={description || themeConfig.site.description} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:site_name" content="Bartłomiej Miłosz" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MiOmiej" />
+<meta name="twitter:creator" content="@MiOmiej" />
+<meta name="twitter:url" content={Astro.url} />
+<meta name="twitter:title" content={title || themeConfig.site.title} />
+<meta name="twitter:description" content={description || themeConfig.site.description} />
+<meta name="twitter:image" content={imageUrl} />
+
+<!-- Schema.org structured data for better SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bartłomiej Miłosz",
+  "url": "https://bartlomiej-milosz.github.io",
+  "description": "Junior Data Analyst transitioning from architecture, with expertise in stakeholder communication and technical analysis",
+  "jobTitle": "Data Analyst",
+  "sameAs": [
+    "https://linkedin.com/in/bartlomiej-milosz",
+    "https://github.com/bartlomiej-milosz",
+    "https://x.com/MiOmiej"
+  ]
+}
+</script>
