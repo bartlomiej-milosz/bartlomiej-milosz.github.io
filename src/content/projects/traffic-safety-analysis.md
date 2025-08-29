@@ -1,5 +1,5 @@
 ---
-title: "Weather Dashboard"
+title: "Traffic Safety Analysis"
 pubDate: 2024-03-05
 featured: true
 image: "/images/projects/weather.jpg"

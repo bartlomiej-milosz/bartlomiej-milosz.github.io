@@ -1,5 +1,5 @@
 ---
-title: "E-commerce Platform"
+title: "Warsaw Property Analysis"
 pubDate: 2024-01-15
 featured: true
 image: "/images/projects/ecommerce.jpg"

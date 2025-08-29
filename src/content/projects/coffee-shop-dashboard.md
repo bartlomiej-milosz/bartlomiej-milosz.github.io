@@ -1,5 +1,5 @@
 ---
-title: "Task Management App"
+title: "Coffee Shop Dashboard"
 pubDate: 2024-02-10
 featured: true
 image: "/images/projects/task-app.jpg"
