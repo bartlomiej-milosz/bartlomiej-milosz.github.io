@@ -5,7 +5,7 @@ import { themeConfig } from '@/config'
 {
   themeConfig.general.themeToggle && (
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-      <div class="theme-icon hollow-circle" />
+      {/* <div class="theme-icon hollow-circle" /> */}
       <div class="theme-icon solid-circle" />
     </button>
   )
@@ -50,8 +50,10 @@ import { themeConfig } from '@/config'
   }
 
   .theme-icon {
-    width: 0.4375rem;
-    height: 0.4375rem;
+    /* width: 0.4375rem;
+    height: 0.4375rem; */
+    width: 0.75rem;
+    height: 0.75rem;
     transition: all 0.2s ease;
   }
 

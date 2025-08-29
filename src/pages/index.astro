@@ -12,6 +12,7 @@ import {
   getRecentProjects,
   getSortedFilteredProjects
 } from '@/utils/draft'
+import LetsConnect from '@/components/widgets/LetsConnect.astro'
 
 // Get pinned posts for homepage
 const pinnedPosts = await getPinnedPosts()
@@ -51,6 +52,7 @@ const hasMoreProjects = allProjects.length > displayProjects.length
       showTitle={true}
       title="Blog"
     />
+    
     <div style="margin-top: var(--space-2xl);"></div>
     <ProjectList
       projects={displayProjects}
@@ -59,5 +61,7 @@ const hasMoreProjects = allProjects.length > displayProjects.length
       showTitle={true}
       title="Projects"
     />
+
+    <LetsConnect />
   </main>
 </IndexLayout>

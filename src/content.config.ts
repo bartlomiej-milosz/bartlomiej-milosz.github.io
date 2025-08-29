@@ -29,6 +29,13 @@ const contact = defineCollection({
   schema: () => z.object({})
 })
 
+const letsConnect = defineCollection({
+  // Load Markdown files in the `src/content/connect/` directory.
+  loader: glob({ base: './src/content/lets-connect', pattern: '**/*.md' }),
+  // Type-check frontmatter using a schema
+  schema: () => z.object({})
+})
+
 const projects = defineCollection({
   // Load Markdown files in the `src/content/projects/` directory.
   loader: glob({ base: './src/content/projects', pattern: '**/*.md' }),
@@ -47,4 +54,4 @@ const projects = defineCollection({
     })
 })
 
-export const collections = { posts, about, contact, projects }
+export const collections = { posts, about, contact, projects, letsConnect }

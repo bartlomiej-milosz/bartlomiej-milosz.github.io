@@ -146,14 +146,13 @@ body {
   transition: background-color 0.2s ease-out;
 }
 
-h1 {
+h1, h2 {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-bold);
   line-height: 1.75;
   margin: 3.75em 0 1.75em 0;
 }
 
-h2,
 h3,
 h4,
 h5 {

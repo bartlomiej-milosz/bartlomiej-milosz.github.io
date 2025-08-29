@@ -1,7 +1,7 @@
 ---
 title: "Weather Dashboard"
 pubDate: 2024-03-05
-featured: false
+featured: true
 image: "/images/projects/weather.jpg"
 tech: ["Next.js", "Chart.js", "OpenWeather API"]
 github: "https://github.com/example/weather-dashboard"
