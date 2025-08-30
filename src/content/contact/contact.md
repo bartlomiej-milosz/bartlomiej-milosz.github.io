@@ -20,5 +20,3 @@ title: 'Contact'
 **Response time:** Within 24 hours on weekdays. For urgent opportunities, please mention in your subject line.
 
 _Looking forward to connecting with fellow professionals and exploring how my analytical background can contribute to your team._
-
----
